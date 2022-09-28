@@ -22,9 +22,7 @@ on:
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add ./logs
-        git add ./utils
-        git add urllist
+        git add Base64
         git commit -m "⏰ 自动更新 $(date '+%Y-%m-%d %H:%M:%S')"
         
     - name: Push
