@@ -12,8 +12,10 @@ on:
     
     - name: 迁出代码
       uses: actions/checkout@v3
-      
 
+    - name: 设置时区
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+      
     - name: base64-Encode
       run: |
         base64 ./URL > ./Base64 -w 0
