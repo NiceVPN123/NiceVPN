@@ -324,6 +324,9 @@ docker run -d --restart=on-failure:3 -p 80:80 clashcheck
 [^2]: https://www.theunarchiver.com/
 [^3]: https://play.google.com/store/apps/
 
+## Time in Stars
+[![Stargazers over time](https://starchart.cc/nicevpn123/nicevpn.svg)](https://starchart.cc/nicevpn123/nicevpn)
+
 ## 联系我们
 
 telegram频道：https://t.me/nicevpn123
