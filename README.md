@@ -3,21 +3,22 @@
 
 一个开放的订阅库，为了自由的隐私
 
-官网：nicevpn.top
+官网： 
+```https://nicevpn.top```
 
 ## 订阅链接
 
 **Base64**
-```https://openit.daycat.space/long```
+```https://sub.nicevpn.top/long```
 
 **小火箭**
-```https://openit.daycat.space/https```
+```https://sub.nicevpn.top/https```
 
 **Clash**
-```https://openit.daycat.space/clash```
+```https://sub.nicevpn.top/clash```
 
 **Quanx**
-```https://openit.daycat.space/qx```
+```https://sub.nicevpn.top/qx```
 
 **不同订阅之间的区别**
 <br>**Base64** 订阅可在大多数翻墙软件中使用 
