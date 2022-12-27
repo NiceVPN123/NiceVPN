@@ -332,5 +332,6 @@ docker run -d --restart=on-failure:3 -p 80:80 clashcheck
 
 telegram频道：https://t.me/nicevpn123
 
-
 telegram群组：https://t.me/nicevpnchat
+
+Email；nicevpn@hotmail.com
