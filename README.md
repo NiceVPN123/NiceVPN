@@ -1,10 +1,12 @@
 # NiceVPN
 ## 简介
-
 一个开放的订阅库，为了自由的隐私
 
 官网： 
 ```https://nicevpn.top```
+
+## 赞助商
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=6af5f6b7da3a&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
 
 ## 订阅链接
 
