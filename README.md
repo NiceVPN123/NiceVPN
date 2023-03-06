@@ -63,6 +63,7 @@
 ### macOS
 首推Clash，界面美观，**只支持英文**且需要[订阅转换](https://sub.tsutsu.one/)！ClashX和Clash一样的内核，ClashX同样需要[订阅转换](https://sub.tsutsu.one/)但是**支持简体中文**，SS最后一次更新则是2019.11.13；M1芯片还可以使用iPhone/iPad版的Shadowrocket & Quantumult X & Arm版的Clash(Arm)和经过Rosetta 2转译的Clash(intel)
 OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
+Wings V Client 基于 V2Ray-Core (支持ss,Trojan, VMess, socks)，支持 v2rayN && Clash 订阅，支持 Intel/M1，支持英文/中文，部分功能需要付费订阅。
 >**.7z文件如何解压？**
 使用系统自带的双击解压 .7z文件或者使用The Unarchiver[^2]进行解压 **(只能解压)**
 #### [SS][ss-NG]｜[Clash(intel)]｜[Clash(Arm)]｜[ClashX]｜[Qv2ray](https://ghproxy.com/https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg)｜[Surge](https://nssurge.com/)｜[v2rayU]
@@ -75,6 +76,8 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 [![点击跳转至Mac App Store][macos-black]][Surge]
 #### OneClick(Arm) *Free*
 [![点击跳转至Mac App Store][macos-black]][one-click]
+#### Wings V Client *Free*
+[![点击跳转至Mac App Store][macos-black]][wings-v-client]
 
 [ss-NG]: https://cdn.jsdelivr.net/shadowsocks/ShadowsocksX-NG/releases/download/v1.9.4/ShadowsocksX-NG.1.9.4.zip
 [clash(intel)]: https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.7/Clash.for.Windows-0.20.7.dmg
@@ -87,6 +90,7 @@ OneClick 在mac下确实可用，但是如果能用其他的就用其他的。
 [Quantumult X]: https://apps.apple.com/app/quantumult-x/id1443988620
 [Surge]: https://apps.apple.com/app/surge-4/id1442620678
 [one-click]: https://apps.apple.com/us/app/oneclick-safe-easy-fast/id1545555197
+[wings-v-client]: https://apps.apple.com/us/app/wings-v-client/id1659637036
 [macos-black]: https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/tag/main/macos-black.svg
 ### [The Unarchiver](https://dl.devmate.com/com.macpaw.site.theunarchiver/TheUnarchiver.dmg)
 [![点击跳转至Mac App Store][macos-black]](https://apps.apple.com/app/the-unarchiver/id425424353)
@@ -150,7 +154,8 @@ Quantumult和QuantumultX(俗称圈x)由一个作者所写，更新频率上Quant
 另外QuantumultX和Surge面向专业发烧友群体，更加注重分流规则构造HTTP请求、HTTPS解密和MitM等功能(软件也就越贵)同时[UI方面](#quantumult-x-ui界面--返回)更加美观定制([教程] / [神机规则]);
 Stash是Clash规则在iOS平台的最佳选择，完整适配Clash Premium;
 Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;Potatso 2偏小众;以上软件购买时必须使用外区Apple ID下载(首推美区);
-当然也有为广大白嫖用户准备的OneClick(支持ss,Trojan,Vmess,小众良心软件)；Shadowlink(安全性存疑，支持主流协议)
+当然也有为广大白嫖用户准备的OneClick(支持ss,Trojan,Vmess,小众良心软件)；Shadowlink(安全性存疑，支持主流协议)；
+Wings V Client 基于 V2Ray-Core (支持ss,Trojan, VMess, socks)，支持 v2rayN && Clash 订阅，支持英文/中文，部分功能需要付费订阅。
 以下软件顺序按照欢迎度从高到低排列
 
  <!--Shadowrocket｜Quantumult X｜Surge｜Quantumult｜Potatso 2｜Stash｜Loon｜Potatso｜OneClick｜Shadowlink｜教程-->
@@ -172,6 +177,8 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [![轻触跳转至App Store][svg-apple]][ipk-oc]
 #### Shadowlink  *Free*
 [![轻触跳转至App Store][svg-apple]][ipk-sl]
+#### Wings V Client *Free*
+[![轻触跳转至App Store][svg-apple]][ipk-wings-v-client]
 
 [ipk-ssr]: https://apps.apple.com/app/shadowrocket/id932747118
 [ipk-quan]: https://apps.apple.com/app/quantumult/id1252015438
@@ -183,6 +190,7 @@ Loon最为新兴软件，有着Surge美观的界面，但仍处于测试阶段;P
 [ipk-loon]: https://apps.apple.com/app/loon/id1373567447
 [ipk-oc]: https://apps.apple.com/app/oneclick-safe-easy-fast/id1545555197
 [ipk-sl]: https://apps.apple.com/app/shadowlink-shadowsocks-vpn/id1439686518
+[ipk-wings-v-client]: https://apps.apple.com/us/app/wings-v-client/id1659637036
 [svg-apple]: https://ghproxy.com/https://raw.githubusercontent.com/yu-steven/tag/main/ios-black.svg
 [教程]: https://limbopro.com/archives/3846.html
 [神机规则]: https://merlinblog.xyz/wiki/quanx.html
