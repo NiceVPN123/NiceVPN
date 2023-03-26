@@ -194,27 +194,28 @@ proxies:
   password: b09d2aaa443af97a
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 28 TJN"
-  server: tj2.dalazhi.cyou
-  port: 443
-  type: trojan
-  password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 29 VMS"
-  type: vmess
+- name: "\U0001F1EC\U0001F1E7 GB 28 VMS"
   server: sht.eqjgkx.xyz
   port: 443
-  cipher: auto
+  type: vmess
   uuid: 334E6B98-CC1E-4A81-9241-05DA57DF6CE5
   alterId: 0
+  cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /speedtest
     headers:
-      host: Amsterdam.kotick.site
+      Host: sht.eqjgkx.xyz
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 29 TJN"
+  server: tj2.dalazhi.cyou
+  port: 443
+  type: trojan
+  password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EC\U0001F1E7 GB 30 VMS"
   type: vmess
   server: sht.eqjgkx.xyz
@@ -228,7 +229,7 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      host: Tokyo.kotick.site
+      host: Amsterdam.kotick.site
 - name: "\U0001F1EC\U0001F1E7 GB 31 VMS"
   type: vmess
   server: sht.eqjgkx.xyz
@@ -242,7 +243,7 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      host: Seattle.kotick.site
+      host: Tokyo.kotick.site
 - name: "\U0001F1EC\U0001F1E7 GB 32 VMS"
   type: vmess
   server: sht.eqjgkx.xyz
@@ -256,7 +257,7 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      host: Lille.kotick.site
+      host: Seattle.kotick.site
 - name: "\U0001F1EC\U0001F1E7 GB 33 VMS"
   type: vmess
   server: sht.eqjgkx.xyz
@@ -270,8 +271,22 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      host: Kansas.kotick.site
+      host: Lille.kotick.site
 - name: "\U0001F1EC\U0001F1E7 GB 34 VMS"
+  type: vmess
+  server: sht.eqjgkx.xyz
+  port: 443
+  cipher: auto
+  uuid: 334E6B98-CC1E-4A81-9241-05DA57DF6CE5
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /speedtest
+    headers:
+      host: Kansas.kotick.site
+- name: "\U0001F1EC\U0001F1E7 GB 35 VMS"
   type: vmess
   server: sht.eqjgkx.xyz
   port: 443
@@ -316,13 +331,14 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 25 TJN"
   - "\U0001F1F9\U0001F1FC TW 26 TJN"
   - "\U0001F1F9\U0001F1FC TW 27 TJN"
-  - "\U0001F1FA\U0001F1F8 US 28 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 29 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 28 VMS"
+  - "\U0001F1FA\U0001F1F8 US 29 TJN"
   - "\U0001F1EC\U0001F1E7 GB 30 VMS"
   - "\U0001F1EC\U0001F1E7 GB 31 VMS"
   - "\U0001F1EC\U0001F1E7 GB 32 VMS"
   - "\U0001F1EC\U0001F1E7 GB 33 VMS"
   - "\U0001F1EC\U0001F1E7 GB 34 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 35 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -356,12 +372,13 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 25 TJN"
   - "\U0001F1F9\U0001F1FC TW 26 TJN"
   - "\U0001F1F9\U0001F1FC TW 27 TJN"
-  - "\U0001F1FA\U0001F1F8 US 28 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 29 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 28 VMS"
+  - "\U0001F1FA\U0001F1F8 US 29 TJN"
   - "\U0001F1EC\U0001F1E7 GB 30 VMS"
   - "\U0001F1EC\U0001F1E7 GB 31 VMS"
   - "\U0001F1EC\U0001F1E7 GB 32 VMS"
   - "\U0001F1EC\U0001F1E7 GB 33 VMS"
   - "\U0001F1EC\U0001F1E7 GB 34 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 35 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
