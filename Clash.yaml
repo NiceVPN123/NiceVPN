@@ -209,6 +209,7 @@ proxies:
   - {name: 🇨🇳 TW 7 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 8 → tg@nicevpn123, server: 211.72.35.157, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 9 → tg@nicevpn123, server: 211.72.35.157, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 1 → tg@nicevpn123, server: 115.126.113.44, port: 443, type: vmess, uuid: 0747b459-2b95-4af7-e7dc-379d9c8c947a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1 → tg@nicevpn123, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -240,6 +241,7 @@ proxy-groups:
       - 🇨🇳 TW 7 → tg@nicevpn123
       - 🇨🇳 TW 8 → tg@nicevpn123
       - 🇨🇳 TW 9 → tg@nicevpn123
+      - 🇭🇰 HK 1 → tg@nicevpn123
       - 🇺🇸 US 1 → tg@nicevpn123
   - name: 💡 自动选择
     type: url-test
@@ -260,6 +262,7 @@ proxy-groups:
       - 🇨🇳 TW 7 → tg@nicevpn123
       - 🇨🇳 TW 8 → tg@nicevpn123
       - 🇨🇳 TW 9 → tg@nicevpn123
+      - 🇭🇰 HK 1 → tg@nicevpn123
       - 🇺🇸 US 1 → tg@nicevpn123
   - name: 🇭🇰 香港节点
     type: url-test
@@ -267,7 +270,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇭🇰 HK 1 → tg@nicevpn123
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -337,6 +340,7 @@ proxy-groups:
       - 🇨🇳 TW 7 → tg@nicevpn123
       - 🇨🇳 TW 8 → tg@nicevpn123
       - 🇨🇳 TW 9 → tg@nicevpn123
+      - 🇭🇰 HK 1 → tg@nicevpn123
       - 🇺🇸 US 1 → tg@nicevpn123
   - name: 👉 国内网站
     type: select
