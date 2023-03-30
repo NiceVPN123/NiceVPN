@@ -100,6 +100,16 @@ proxies:
   password: b84d16a244460e09
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1ED\U0001F1F0 HK 15 VMS"
+  type: vmess
+  server: 115.126.113.44
+  port: 443
+  cipher: auto
+  uuid: 0747b459-2b95-4af7-e7dc-379d9c8c947a
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -118,6 +128,7 @@ proxy-groups:
   - "\U0001F1F2\U0001F1F4 MO 12 TJN"
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 15 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -138,5 +149,6 @@ proxy-groups:
   - "\U0001F1F2\U0001F1F4 MO 12 TJN"
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 15 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
