@@ -197,16 +197,16 @@ dns:
       - +.gvt1.com
 proxies:
   - {name: CH 1 → tg@nicevpn123, server: 195.15.243.26, port: 443, type: trojan, password: !<str> 4478, skip-cert-verify: true, udp: true}
-  - {name: IR 1 → tg@nicevpn123, server: 46.209.20.209, port: 31270, type: vmess, uuid: d591b877-8ae3-4f96-d327-4673a236e1c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: IR 2 → tg@nicevpn123, server: f-us1.wvvvv.eu.org, port: 20, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IR 1 → tg@nicevpn123, server: f-eu1.wvvvv.eu.org, port: 1, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IR 2 → tg@nicevpn123, server: 46.209.20.209, port: 31270, type: vmess, uuid: d591b877-8ae3-4f96-d327-4673a236e1c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: IR 3 → tg@nicevpn123, server: f-eu1.wvvvv.eu.org, port: 1, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IR 4 → tg@nicevpn123, server: f-eu1.wvvvv.eu.org, port: 1, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IR 4 → tg@nicevpn123, server: f-us1.wvvvv.eu.org, port: 20, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: MO 1 → tg@nicevpn123, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
   - {name: MO 2 → tg@nicevpn123, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: true, udp: true}
   - {name: MO 3 → tg@nicevpn123, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
   - {name: SE 1 → tg@nicevpn123, server: 37.252.9.76, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: ZA 1 → tg@nicevpn123, server: 156.225.67.213, port: 47134, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZA 2 → tg@nicevpn123, server: 156.225.67.250, port: 49920, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZA 1 → tg@nicevpn123, server: 156.225.67.250, port: 49920, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZA 2 → tg@nicevpn123, server: 156.225.67.213, port: 47134, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 AU 1 → tg@nicevpn123, server: 203.30.188.100, port: 8880, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇨🇦 CA 1 → tg@nicevpn123, server: asia.artunnel57.host, port: 80, type: vmess, uuid: 65e44501-defd-4609-a4e3-7028dc417b50, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess-ntls, headers: {Host: asia.artunnel57.host}}, udp: true}
   - {name: 🇨🇦 CA 2 → tg@nicevpn123, server: 165.154.243.201, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
@@ -214,27 +214,28 @@ proxies:
   - {name: 🇨🇦 CA 4 → tg@nicevpn123, server: stw6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 CA 5 → tg@nicevpn123, server: 165.154.226.167, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 1 → tg@nicevpn123, server: 121.14.82.79, port: 10011, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: www.bing.com, path: "", tls: false, mux: false, skip-cert-verify: true}, udp: true}
-  - {name: 🇨🇳 CN 10 → tg@nicevpn123, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i2.iivvppnn.info}}, udp: true}
-  - {name: 🇨🇳 CN 11 → tg@nicevpn123, server: hk4.vfun.icu, port: 446, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.hk, udp: true}
-  - {name: 🇨🇳 CN 12 → tg@nicevpn123, server: yd.huojian666.xyz, port: 54585, type: trojan, password: e8c7b4f7-dd99-458a-a5c5-d40edcbf662e, sni: hkd.apirocket.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 13 → tg@nicevpn123, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 CN 14 → tg@nicevpn123, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 CN 15 → tg@nicevpn123, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 CN 16 → tg@nicevpn123, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 CN 17 → tg@nicevpn123, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 18 → tg@nicevpn123, server: hk80.8b750e3e20aa.sanfen004.me, port: 80, type: vmess, uuid: 1172d7fe-4a5d-4d07-92f6-aefa4212347f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: hk80.8b750e3e20aa.sanfen004.me}}, udp: true}
-  - {name: 🇨🇳 CN 19 → tg@nicevpn123, server: 36.139.166.252, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@, udp: true}
-  - {name: 🇨🇳 CN 2 → tg@nicevpn123, server: 120.210.205.220, port: 36918, type: vmess, uuid: 411dacd6-030b-41ad-bfb6-3a822ec83014, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 20 → tg@nicevpn123, server: 36.134.16.171, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 21 → tg@nicevpn123, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 22 → tg@nicevpn123, server: 198.2.218.220, port: 51202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 3 → tg@nicevpn123, server: 198.2.218.220, port: 51202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 4 → tg@nicevpn123, server: zf-shdx.syjd.xyz, port: 34500, type: ss, cipher: aes-128-gcm, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, udp: true}
-  - {name: 🇨🇳 CN 5 → tg@nicevpn123, server: 14.29.124.168, port: 24005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 CN 6 → tg@nicevpn123, server: d0cd89648587.sanfen004.me, port: 16611, type: ss, cipher: chacha20-ietf-poly1305, password: 134e78bd-39d4-4c39-90d7-c7639167a7a9, udp: true}
-  - {name: 🇨🇳 CN 7 → tg@nicevpn123, server: 120.240.163.56, port: 49944, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 8 → tg@nicevpn123, server: yd.huojian666.xyz, port: 14256, type: trojan, password: e8c7b4f7-dd99-458a-a5c5-d40edcbf662e, sni: hka.apirocket.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 9 → tg@nicevpn123, server: d0cd89648587.sanfen004.me, port: 16609, type: vmess, uuid: 134e78bd-39d4-4c39-90d7-c7639167a7a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 10 → tg@nicevpn123, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 CN 11 → tg@nicevpn123, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 CN 12 → tg@nicevpn123, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 CN 13 → tg@nicevpn123, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 CN 14 → tg@nicevpn123, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 15 → tg@nicevpn123, server: hk80.8b750e3e20aa.sanfen004.me, port: 80, type: vmess, uuid: 1172d7fe-4a5d-4d07-92f6-aefa4212347f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: hk80.8b750e3e20aa.sanfen004.me}}, udp: true}
+  - {name: 🇨🇳 CN 16 → tg@nicevpn123, server: 36.139.166.252, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@, udp: true}
+  - {name: 🇨🇳 CN 17 → tg@nicevpn123, server: 36.134.16.171, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 18 → tg@nicevpn123, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 19 → tg@nicevpn123, server: 198.2.218.220, port: 51202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 2 → tg@nicevpn123, server: zf-shdx.syjd.xyz, port: 34500, type: ss, cipher: aes-128-gcm, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, udp: true}
+  - {name: 🇨🇳 CN 20 → tg@nicevpn123, server: 198.2.218.220, port: 51202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 21 → tg@nicevpn123, server: 14.29.124.168, port: 24005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 CN 22 → tg@nicevpn123, server: d0cd89648587.sanfen004.me, port: 16611, type: ss, cipher: chacha20-ietf-poly1305, password: 134e78bd-39d4-4c39-90d7-c7639167a7a9, udp: true}
+  - {name: 🇨🇳 CN 23 → tg@nicevpn123, server: 120.240.163.56, port: 49944, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 3 → tg@nicevpn123, server: 120.210.205.220, port: 36918, type: vmess, uuid: 411dacd6-030b-41ad-bfb6-3a822ec83014, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 4 → tg@nicevpn123, server: 198.2.218.220, port: 51202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 5 → tg@nicevpn123, server: yd.huojian666.xyz, port: 14256, type: trojan, password: e8c7b4f7-dd99-458a-a5c5-d40edcbf662e, sni: hka.apirocket.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 6 → tg@nicevpn123, server: d0cd89648587.sanfen004.me, port: 16609, type: vmess, uuid: 134e78bd-39d4-4c39-90d7-c7639167a7a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 7 → tg@nicevpn123, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i2.iivvppnn.info}}, udp: true}
+  - {name: 🇨🇳 CN 8 → tg@nicevpn123, server: hk4.vfun.icu, port: 446, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.hk, udp: true}
+  - {name: 🇨🇳 CN 9 → tg@nicevpn123, server: yd.huojian666.xyz, port: 54585, type: trojan, password: e8c7b4f7-dd99-458a-a5c5-d40edcbf662e, sni: hkd.apirocket.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 1 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 10 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 11 → tg@nicevpn123, server: cdn.twnct.6641634715834932.me, port: 7047, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: cdn.twnct.6641634715834932.me, skip-cert-verify: true, udp: true}
@@ -249,124 +250,126 @@ proxies:
   - {name: 🇨🇳 TW 8 → tg@nicevpn123, server: 211.72.35.157, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 9 → tg@nicevpn123, server: 211.72.35.157, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 1 → tg@nicevpn123, server: 217.145.236.104, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 1 → tg@nicevpn123, server: 92.222.209.100, port: 47021, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 2 → tg@nicevpn123, server: 194.146.49.64, port: 443, type: vmess, uuid: 9c91143c-7cea-4135-89d8-da851515de55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 3 → tg@nicevpn123, server: 54.37.185.148, port: 32894, type: trojan, password: HchlVCfnXB, sni: fararu.com, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 4 → tg@nicevpn123, server: a1.veryfastnet1.tk, port: 32894, type: trojan, password: HchlVCfnXB, sni: jamaran.ir, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 FR 5 → tg@nicevpn123, server: 51.195.35.148, port: 58812, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 1 → tg@nicevpn123, server: 54.37.185.148, port: 32894, type: trojan, password: HchlVCfnXB, sni: fararu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 2 → tg@nicevpn123, server: a1.veryfastnet1.tk, port: 32894, type: trojan, password: HchlVCfnXB, sni: jamaran.ir, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 3 → tg@nicevpn123, server: 51.195.35.148, port: 58812, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 4 → tg@nicevpn123, server: 92.222.209.100, port: 47021, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 FR 5 → tg@nicevpn123, server: 194.146.49.64, port: 443, type: vmess, uuid: 9c91143c-7cea-4135-89d8-da851515de55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 1 → tg@nicevpn123, server: 156.245.8.25, port: 49920, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 2 → tg@nicevpn123, server: 156.245.8.25, port: 49920, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 3 → tg@nicevpn123, server: 156.245.8.105, port: 30779, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 2 → tg@nicevpn123, server: 156.245.8.105, port: 30779, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 3 → tg@nicevpn123, server: 156.245.8.25, port: 49920, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇮🇳 IN 1 → tg@nicevpn123, server: v2test1.mark20web.pw, port: 2096, type: vmess, uuid: f9285a7d-34fb-4723-9ab0-9a70f735b146, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v2test1.mark20web.pw}}, udp: true}
-  - {name: 🇯🇵 JP 1 → tg@nicevpn123, server: 43.206.233.169, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇯🇵 JP 10 → tg@nicevpn123, server: 43.154.76.92, port: 25034, type: vmess, uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk15/getData}, udp: true}
-  - {name: 🇯🇵 JP 11 → tg@nicevpn123, server: jp2.vfun.icu, port: 443, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.hk, udp: true}
-  - {name: 🇯🇵 JP 12 → tg@nicevpn123, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ======, obfs-param: PT09PQ======, udp: true}
-  - {name: 🇯🇵 JP 13 → tg@nicevpn123, server: awsjp16-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 14 → tg@nicevpn123, server: awsjp1.untilmu.com, port: 443, type: trojan, password: e94901ec-3572-469b-8bd6-44b57e37852d, sni: awsjp1.untilmu.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 15 → tg@nicevpn123, server: 43.201.31.215, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇯🇵 JP 16 → tg@nicevpn123, server: 43.200.6.15, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇯🇵 JP 17 → tg@nicevpn123, server: awshk15-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 18 → tg@nicevpn123, server: awsjp20-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 19 → tg@nicevpn123, server: awsjp3.untilmu.com, port: 443, type: trojan, password: e94901ec-3572-469b-8bd6-44b57e37852d, sni: awsjp3.untilmu.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 2 → tg@nicevpn123, server: microsoft-hk01.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: microsoft-hk01.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 20 → tg@nicevpn123, server: awskr4-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 3 → tg@nicevpn123, server: microsoft-hk02.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: microsoft-hk02.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 4 → tg@nicevpn123, server: microsoft-hk03.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: microsoft-hk03.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 5 → tg@nicevpn123, server: jp-csjc.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: jp-csjc.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 6 → tg@nicevpn123, server: 43.206.221.97, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇯🇵 JP 7 → tg@nicevpn123, server: jp02.170203.xyz, port: 23245, type: vmess, uuid: 3f9168ca-5fca-48af-b86c-e4c945b61db9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp02.170203.xyz}}, udp: true}
-  - {name: 🇯🇵 JP 8 → tg@nicevpn123, server: 43.154.189.252, port: 41589, type: vmess, uuid: bc32a4cb-734d-4f55-888b-704ca4950ce9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk13/getData}, udp: true}
-  - {name: 🇯🇵 JP 9 → tg@nicevpn123, server: 43.201.14.240, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇰🇷 KR 1 → tg@nicevpn123, server: f-as2.wvvvv.eu.org, port: 1, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL 1 → tg@nicevpn123, server: 154.84.1.48, port: 43313, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL 2 → tg@nicevpn123, server: 45.131.248.199, port: 45265, type: ss, cipher: aes-256-gcm, password: Trdm4IPLAn, udp: true}
-  - {name: 🇳🇱 NL 3 → tg@nicevpn123, server: 185.193.30.158, port: 443, type: vmess, uuid: A59E320C-BAC6-45E3-8A27-1518610708D0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest}, udp: true}
+  - {name: 🇯🇵 JP 1 → tg@nicevpn123, server: microsoft-hk01.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: microsoft-hk01.syjd.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 10 → tg@nicevpn123, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: PT09PQ======, obfs-param: PT09PQ======, udp: true}
+  - {name: 🇯🇵 JP 11 → tg@nicevpn123, server: awsjp16-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 12 → tg@nicevpn123, server: awsjp1.untilmu.com, port: 443, type: trojan, password: e94901ec-3572-469b-8bd6-44b57e37852d, sni: awsjp1.untilmu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 13 → tg@nicevpn123, server: 43.201.31.215, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 JP 14 → tg@nicevpn123, server: 43.200.6.15, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 JP 15 → tg@nicevpn123, server: awshk15-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 16 → tg@nicevpn123, server: awsjp20-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 17 → tg@nicevpn123, server: awsjp3.untilmu.com, port: 443, type: trojan, password: e94901ec-3572-469b-8bd6-44b57e37852d, sni: awsjp3.untilmu.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 18 → tg@nicevpn123, server: awskr4-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 19 → tg@nicevpn123, server: 43.206.221.97, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 JP 2 → tg@nicevpn123, server: microsoft-hk02.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: microsoft-hk02.syjd.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 20 → tg@nicevpn123, server: jp02.170203.xyz, port: 23245, type: vmess, uuid: 3f9168ca-5fca-48af-b86c-e4c945b61db9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp02.170203.xyz}}, udp: true}
+  - {name: 🇯🇵 JP 3 → tg@nicevpn123, server: microsoft-hk03.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: microsoft-hk03.syjd.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 4 → tg@nicevpn123, server: jp-csjc.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: jp-csjc.syjd.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 5 → tg@nicevpn123, server: 43.206.233.169, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 JP 6 → tg@nicevpn123, server: 43.154.189.252, port: 41589, type: vmess, uuid: bc32a4cb-734d-4f55-888b-704ca4950ce9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk13/getData}, udp: true}
+  - {name: 🇯🇵 JP 7 → tg@nicevpn123, server: 43.201.14.240, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 JP 8 → tg@nicevpn123, server: 43.154.76.92, port: 25034, type: vmess, uuid: 784272d2-bd2d-438a-bbd4-1271bb1f1b0d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk15/getData}, udp: true}
+  - {name: 🇯🇵 JP 9 → tg@nicevpn123, server: jp2.vfun.icu, port: 443, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.hk, udp: true}
+  - {name: 🇳🇱 NL 1 → tg@nicevpn123, server: 45.131.248.199, port: 45265, type: ss, cipher: aes-256-gcm, password: Trdm4IPLAn, udp: true}
+  - {name: 🇳🇱 NL 2 → tg@nicevpn123, server: 185.193.30.158, port: 443, type: vmess, uuid: A59E320C-BAC6-45E3-8A27-1518610708D0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest}, udp: true}
+  - {name: 🇳🇱 NL 3 → tg@nicevpn123, server: 154.84.1.48, port: 43313, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇷🇺 RU 1 → tg@nicevpn123, server: 188.119.65.50, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 SG 1 → tg@nicevpn123, server: sg-csjc.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: sg-csjc.syjd.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 SG 2 → tg@nicevpn123, server: 00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win, port: 443, type: vmess, uuid: 34367fa9-7135-4018-80fe-0ca78d90a28b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 1 → tg@nicevpn123, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 10 → tg@nicevpn123, server: germany1.unlimiteddev.co, port: 80, type: vmess, uuid: 97ea79a6-615c-4ad7-8083-4f3b49cbe8a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: germany1.unlimiteddev.co}}, udp: true}
-  - {name: 🇺🇸 US 11 → tg@nicevpn123, server: dp3.scproxy.top, port: 443, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: 🇺🇸 US 12 → tg@nicevpn123, server: 143.42.99.183, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 13 → tg@nicevpn123, server: lsb-gy.heinu.cf, port: 2096, type: vmess, uuid: d793c013-f596-4af9-de0a-2062bb864dd7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@heinuhome, headers: {Host: lsb-gy.heinu.cf}}, udp: true}
-  - {name: 🇺🇸 US 14 → tg@nicevpn123, server: 142.4.114.21, port: 34002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 15 → tg@nicevpn123, server: 142.4.110.119, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 16 → tg@nicevpn123, server: cf.noaries.de, port: 8880, type: vmess, uuid: a0f153d8-e32f-41f3-9bcd-073f579e2264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: cf.noaries.de}}, udp: true}
-  - {name: 🇺🇸 US 17 → tg@nicevpn123, server: 137.175.3.228, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 18 → tg@nicevpn123, server: cf-cdn.syjd.xyz, port: 443, type: vmess, uuid: e222ea82-6ce2-4efd-9caa-9d48dd712e64, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cdn, headers: {Host: cf-cdn.syjd.xyz}}, udp: true}
-  - {name: 🇺🇸 US 19 → tg@nicevpn123, server: aws-hk01.syjd.xyz, port: 7047, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: aws-hk01.syjd.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2 → tg@nicevpn123, server: 45.86.11.199, port: 44101, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 20 → tg@nicevpn123, server: microsoft-us.syjd.xyz, port: 7777, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: jp-zs01.78321.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 21 → tg@nicevpn123, server: ex-us.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: jp-zs01.78321.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 22 → tg@nicevpn123, server: microsoft-us.syjd.xyz, port: 30006, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: jp-zs01.78321.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 23 → tg@nicevpn123, server: 16.162.74.222, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 24 → tg@nicevpn123, server: 45.15.185.10, port: 54492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 25 → tg@nicevpn123, server: 131.186.41.192, port: 26297, type: vmess, uuid: b0ed6eb7-dc30-4897-df50-c2c1d4ee6e91, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 26 → tg@nicevpn123, server: 172.67.140.193, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
-  - {name: 🇺🇸 US 27 → tg@nicevpn123, server: 198.2.204.248, port: 46802, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 28 → tg@nicevpn123, server: 172.67.217.222, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
-  - {name: 🇺🇸 US 29 → tg@nicevpn123, server: 13.215.183.79, port: 443, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
-  - {name: 🇺🇸 US 3 → tg@nicevpn123, server: 172.67.127.123, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
-  - {name: 🇺🇸 US 30 → tg@nicevpn123, server: 16.163.157.8, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 31 → tg@nicevpn123, server: 199.180.103.28, port: 49988, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 32 → tg@nicevpn123, server: 3.mamadcucu.com, port: 2086, type: vmess, uuid: 929344e1-473c-4feb-b86b-fde3ee1ccd16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ArsalanTauBot, headers: {Host: 3.mamadcucu.com}}, udp: true}
-  - {name: 🇺🇸 US 33 → tg@nicevpn123, server: 172.67.250.239, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
-  - {name: 🇺🇸 US 34 → tg@nicevpn123, server: 23.224.110.182, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 35 → tg@nicevpn123, server: 172.67.57.22, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
-  - {name: 🇺🇸 US 36 → tg@nicevpn123, server: 172.67.21.219, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
-  - {name: 🇺🇸 US 37 → tg@nicevpn123, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vde2.0bad.com}}, udp: true}
-  - {name: 🇺🇸 US 38 → tg@nicevpn123, server: 142.4.110.119, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 39 → tg@nicevpn123, server: 172.64.173.160, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
-  - {name: 🇺🇸 US 4 → tg@nicevpn123, server: cf.515188.xyz, port: 8080, type: vmess, uuid: 9d553e2b-4176-44ef-bf70-48aa8eb6da60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: cf.515188.xyz}}, udp: true}
-  - {name: 🇺🇸 US 40 → tg@nicevpn123, server: 172.67.199.253, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
-  - {name: 🇺🇸 US 41 → tg@nicevpn123, server: medieval-distribute-failed-arrivals.trycloudflare.com, port: 443, type: vmess, uuid: 545c636f-4c88-41b4-bfc0-149b5a6848f4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vmess?ed=2048", headers: {Host: medieval-distribute-failed-arrivals.trycloudflare.com}}, udp: true}
-  - {name: 🇺🇸 US 42 → tg@nicevpn123, server: v2test.mark20web.pw, port: 443, type: vmess, uuid: f9285a7d-34fb-4723-9ab0-9a70f735b146, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v2test.mark20web.pw}}, udp: true}
-  - {name: 🇺🇸 US 43 → tg@nicevpn123, server: 45.86.11.176, port: 59102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 44 → tg@nicevpn123, server: 23.224.15.73, port: 51552, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 45 → tg@nicevpn123, server: 192.74.242.147, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 46 → tg@nicevpn123, server: 192.74.242.139, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 47 → tg@nicevpn123, server: 198.2.198.12, port: 42288, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 48 → tg@nicevpn123, server: 142.0.139.54, port: 57072, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 49 → tg@nicevpn123, server: 4bb4ced4.8200860.xyz, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 4bb4ced4.8200860.xyz}}, udp: true}
-  - {name: 🇺🇸 US 5 → tg@nicevpn123, server: 107.148.195.16, port: 50014, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 50 → tg@nicevpn123, server: hk4.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk4.af49c4e4c2ef.sanfen001.pics}}, udp: true}
-  - {name: 🇺🇸 US 51 → tg@nicevpn123, server: hk2.c2bfe79372be.sanfen001.pics, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk2.c2bfe79372be.sanfen001.pics}}, udp: true}
-  - {name: 🇺🇸 US 52 → tg@nicevpn123, server: ch.learnpropy.click, port: 2053, type: vmess, uuid: 8cab8fb7-4977-4ec2-8bba-2914dd43bfbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /gsdg43575, headers: {Host: ch.learnpropy.click}}, udp: true}
-  - {name: 🇺🇸 US 53 → tg@nicevpn123, server: mm.learnpropy.click, port: 2053, type: vmess, uuid: 8cab8fb7-4977-4ec2-8bba-2914dd43bfbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /gsdg43575, headers: {Host: mm.learnpropy.click}}, udp: true}
-  - {name: 🇺🇸 US 54 → tg@nicevpn123, server: cf.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /WKtzeN11GLqwVNBTp9mX, headers: {Host: cf.yj2022.ga}}, udp: true}
-  - {name: 🇺🇸 US 55 → tg@nicevpn123, server: 23.224.110.183, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/080712342310}, udp: true}
-  - {name: 🇺🇸 US 56 → tg@nicevpn123, server: 38.40.219.184, port: 50462, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 57 → tg@nicevpn123, server: 142.4.114.21, port: 34002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 58 → tg@nicevpn123, server: 45.86.11.199, port: 44101, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 59 → tg@nicevpn123, server: vin1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vin1.0bad.com}}, udp: true}
-  - {name: 🇺🇸 US 6 → tg@nicevpn123, server: 172.64.194.13, port: 8880, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 60 → tg@nicevpn123, server: 143.42.61.105, port: 35815, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 8256180930, udp: true}
-  - {name: 🇺🇸 US 61 → tg@nicevpn123, server: tr.dns.tlz.asia, port: 1231, type: trojan, password: bHlD0P4J1B, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 62 → tg@nicevpn123, server: aws.blowm1k.club, port: 20532, type: trojan, password: SbCfIK4dKM, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 63 → tg@nicevpn123, server: 142.4.114.21, port: 34002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 64 → tg@nicevpn123, server: 38.40.219.184, port: 50462, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 65 → tg@nicevpn123, server: awssg13-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 66 → tg@nicevpn123, server: 142.4.126.56, port: 33302, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 67 → tg@nicevpn123, server: awssg14-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 68 → tg@nicevpn123, server: awssg18-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 69 → tg@nicevpn123, server: 172.67.84.93, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
-  - {name: 🇺🇸 US 7 → tg@nicevpn123, server: 137.175.18.86, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 70 → tg@nicevpn123, server: 13.215.209.200, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 71 → tg@nicevpn123, server: 45.86.11.201, port: 44101, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 72 → tg@nicevpn123, server: awssg11-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 73 → tg@nicevpn123, server: 192.74.242.139, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 74 → tg@nicevpn123, server: awssg15-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 75 → tg@nicevpn123, server: hk5.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk5.af49c4e4c2ef.sanfen001.pics}}, udp: true}
-  - {name: 🇺🇸 US 76 → tg@nicevpn123, server: 170-187-134-190.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 77 → tg@nicevpn123, server: 137.175.3.228, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 78 → tg@nicevpn123, server: awsin3-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 79 → tg@nicevpn123, server: awsin1-tg-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 8 → tg@nicevpn123, server: 142.4.114.26, port: 34002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 80 → tg@nicevpn123, server: 192.74.232.250, port: 51802, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 81 → tg@nicevpn123, server: 13.214.212.14, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇸 US 82 → tg@nicevpn123, server: awssg8-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 9 → tg@nicevpn123, server: 137.175.63.135, port: 59009, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 10 → tg@nicevpn123, server: cf.515188.xyz, port: 8080, type: vmess, uuid: 9d553e2b-4176-44ef-bf70-48aa8eb6da60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: cf.515188.xyz}}, udp: true}
+  - {name: 🇺🇸 US 11 → tg@nicevpn123, server: 107.148.195.16, port: 50014, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 12 → tg@nicevpn123, server: 172.64.194.13, port: 8880, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 13 → tg@nicevpn123, server: 137.175.18.86, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 14 → tg@nicevpn123, server: 142.4.114.26, port: 34002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 15 → tg@nicevpn123, server: 137.175.63.135, port: 59009, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 16 → tg@nicevpn123, server: germany1.unlimiteddev.co, port: 80, type: vmess, uuid: 97ea79a6-615c-4ad7-8083-4f3b49cbe8a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: germany1.unlimiteddev.co}}, udp: true}
+  - {name: 🇺🇸 US 17 → tg@nicevpn123, server: dp3.scproxy.top, port: 443, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dp3.scproxy.top}}, udp: true}
+  - {name: 🇺🇸 US 18 → tg@nicevpn123, server: 143.42.99.183, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 19 → tg@nicevpn123, server: lsb-gy.heinu.cf, port: 2096, type: vmess, uuid: d793c013-f596-4af9-de0a-2062bb864dd7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@heinuhome, headers: {Host: lsb-gy.heinu.cf}}, udp: true}
+  - {name: 🇺🇸 US 2 → tg@nicevpn123, server: cf-cdn.syjd.xyz, port: 443, type: vmess, uuid: e222ea82-6ce2-4efd-9caa-9d48dd712e64, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cdn, headers: {Host: cf-cdn.syjd.xyz}}, udp: true}
+  - {name: 🇺🇸 US 20 → tg@nicevpn123, server: 142.4.114.21, port: 34002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 21 → tg@nicevpn123, server: 142.4.110.119, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 22 → tg@nicevpn123, server: cf.noaries.de, port: 8880, type: vmess, uuid: a0f153d8-e32f-41f3-9bcd-073f579e2264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: cf.noaries.de}}, udp: true}
+  - {name: 🇺🇸 US 23 → tg@nicevpn123, server: 137.175.3.228, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 24 → tg@nicevpn123, server: v2test.mark20web.pw, port: 443, type: vmess, uuid: f9285a7d-34fb-4723-9ab0-9a70f735b146, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v2test.mark20web.pw}}, udp: true}
+  - {name: 🇺🇸 US 25 → tg@nicevpn123, server: 45.86.11.176, port: 59102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 26 → tg@nicevpn123, server: 23.224.15.73, port: 51552, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 27 → tg@nicevpn123, server: 192.74.242.147, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 28 → tg@nicevpn123, server: 192.74.242.139, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 29 → tg@nicevpn123, server: 198.2.198.12, port: 42288, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3 → tg@nicevpn123, server: aws-hk01.syjd.xyz, port: 7047, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: aws-hk01.syjd.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 30 → tg@nicevpn123, server: 142.0.139.54, port: 57072, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 31 → tg@nicevpn123, server: 4bb4ced4.8200860.xyz, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 4bb4ced4.8200860.xyz}}, udp: true}
+  - {name: 🇺🇸 US 32 → tg@nicevpn123, server: hk4.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk4.af49c4e4c2ef.sanfen001.pics}}, udp: true}
+  - {name: 🇺🇸 US 33 → tg@nicevpn123, server: hk2.c2bfe79372be.sanfen001.pics, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk2.c2bfe79372be.sanfen001.pics}}, udp: true}
+  - {name: 🇺🇸 US 34 → tg@nicevpn123, server: ch.learnpropy.click, port: 2053, type: vmess, uuid: 8cab8fb7-4977-4ec2-8bba-2914dd43bfbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /gsdg43575, headers: {Host: ch.learnpropy.click}}, udp: true}
+  - {name: 🇺🇸 US 35 → tg@nicevpn123, server: mm.learnpropy.click, port: 2053, type: vmess, uuid: 8cab8fb7-4977-4ec2-8bba-2914dd43bfbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /gsdg43575, headers: {Host: mm.learnpropy.click}}, udp: true}
+  - {name: 🇺🇸 US 36 → tg@nicevpn123, server: cf.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /WKtzeN11GLqwVNBTp9mX, headers: {Host: cf.yj2022.ga}}, udp: true}
+  - {name: 🇺🇸 US 37 → tg@nicevpn123, server: 23.224.110.183, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/080712342310}, udp: true}
+  - {name: 🇺🇸 US 38 → tg@nicevpn123, server: 38.40.219.184, port: 50462, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 39 → tg@nicevpn123, server: 142.4.114.21, port: 34002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 4 → tg@nicevpn123, server: microsoft-us.syjd.xyz, port: 7777, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: jp-zs01.78321.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 40 → tg@nicevpn123, server: 45.86.11.199, port: 44101, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 41 → tg@nicevpn123, server: vin1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vin1.0bad.com}}, udp: true}
+  - {name: 🇺🇸 US 42 → tg@nicevpn123, server: 143.42.61.105, port: 35815, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 8256180930, udp: true}
+  - {name: 🇺🇸 US 43 → tg@nicevpn123, server: tr.dns.tlz.asia, port: 1231, type: trojan, password: bHlD0P4J1B, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 44 → tg@nicevpn123, server: aws.blowm1k.club, port: 20532, type: trojan, password: SbCfIK4dKM, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 45 → tg@nicevpn123, server: 142.4.114.21, port: 34002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 46 → tg@nicevpn123, server: 3.mamadcucu.com, port: 2086, type: vmess, uuid: 929344e1-473c-4feb-b86b-fde3ee1ccd16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ArsalanTauBot, headers: {Host: 3.mamadcucu.com}}, udp: true}
+  - {name: 🇺🇸 US 47 → tg@nicevpn123, server: 38.40.219.184, port: 50462, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 48 → tg@nicevpn123, server: awssg13-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 49 → tg@nicevpn123, server: 142.4.126.56, port: 33302, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 5 → tg@nicevpn123, server: ex-us.syjd.xyz, port: 443, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: jp-zs01.78321.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 50 → tg@nicevpn123, server: awssg14-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 51 → tg@nicevpn123, server: awssg18-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 52 → tg@nicevpn123, server: 172.67.84.93, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
+  - {name: 🇺🇸 US 53 → tg@nicevpn123, server: 13.215.209.200, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 54 → tg@nicevpn123, server: 45.86.11.201, port: 44101, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 55 → tg@nicevpn123, server: 172.64.173.160, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
+  - {name: 🇺🇸 US 56 → tg@nicevpn123, server: awssg11-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 57 → tg@nicevpn123, server: 192.74.242.139, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 58 → tg@nicevpn123, server: awssg15-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 59 → tg@nicevpn123, server: hk5.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk5.af49c4e4c2ef.sanfen001.pics}}, udp: true}
+  - {name: 🇺🇸 US 6 → tg@nicevpn123, server: microsoft-us.syjd.xyz, port: 30006, type: trojan, password: e222ea82-6ce2-4efd-9caa-9d48dd712e64, sni: jp-zs01.78321.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 60 → tg@nicevpn123, server: 170-187-134-190.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 61 → tg@nicevpn123, server: 16.163.157.8, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 62 → tg@nicevpn123, server: 137.175.3.228, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 63 → tg@nicevpn123, server: awsin3-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 64 → tg@nicevpn123, server: awsin1-tg-data.amazon-azure.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 65 → tg@nicevpn123, server: 192.74.232.250, port: 51802, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 66 → tg@nicevpn123, server: 13.214.212.14, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 US 67 → tg@nicevpn123, server: awssg8-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 05e34875-a77c-4156-8bc8-f815f235905a, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 68 → tg@nicevpn123, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: cf-lt.sharecentre.online}}, udp: true}
+  - {name: 🇺🇸 US 69 → tg@nicevpn123, server: 16.162.74.222, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 7 → tg@nicevpn123, server: f-as2.wvvvv.eu.org, port: 1, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 70 → tg@nicevpn123, server: 45.15.185.10, port: 54492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 71 → tg@nicevpn123, server: 131.186.41.192, port: 26297, type: vmess, uuid: b0ed6eb7-dc30-4897-df50-c2c1d4ee6e91, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 72 → tg@nicevpn123, server: 172.67.140.193, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
+  - {name: 🇺🇸 US 73 → tg@nicevpn123, server: 198.2.204.248, port: 46802, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 74 → tg@nicevpn123, server: 172.67.217.222, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
+  - {name: 🇺🇸 US 75 → tg@nicevpn123, server: 13.215.183.79, port: 443, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
+  - {name: 🇺🇸 US 76 → tg@nicevpn123, server: 199.180.103.28, port: 49988, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 77 → tg@nicevpn123, server: 172.67.250.239, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
+  - {name: 🇺🇸 US 78 → tg@nicevpn123, server: 23.224.110.182, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 79 → tg@nicevpn123, server: 172.67.57.22, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
+  - {name: 🇺🇸 US 8 → tg@nicevpn123, server: 45.86.11.199, port: 44101, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 80 → tg@nicevpn123, server: 172.67.21.219, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
+  - {name: 🇺🇸 US 81 → tg@nicevpn123, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vde2.0bad.com}}, udp: true}
+  - {name: 🇺🇸 US 82 → tg@nicevpn123, server: 142.4.110.119, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 83 → tg@nicevpn123, server: 142.4.114.26, port: 34002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 84 → tg@nicevpn123, server: 172.67.199.253, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
+  - {name: 🇺🇸 US 85 → tg@nicevpn123, server: medieval-distribute-failed-arrivals.trycloudflare.com, port: 443, type: vmess, uuid: 545c636f-4c88-41b4-bfc0-149b5a6848f4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vmess?ed=2048", headers: {Host: medieval-distribute-failed-arrivals.trycloudflare.com}}, udp: true}
+  - {name: 🇺🇸 US 9 → tg@nicevpn123, server: 172.67.127.123, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -416,6 +419,7 @@ proxy-groups:
       - 🇨🇳 CN 20 → tg@nicevpn123
       - 🇨🇳 CN 21 → tg@nicevpn123
       - 🇨🇳 CN 22 → tg@nicevpn123
+      - 🇨🇳 CN 23 → tg@nicevpn123
       - 🇨🇳 CN 3 → tg@nicevpn123
       - 🇨🇳 CN 4 → tg@nicevpn123
       - 🇨🇳 CN 5 → tg@nicevpn123
@@ -466,7 +470,6 @@ proxy-groups:
       - 🇯🇵 JP 7 → tg@nicevpn123
       - 🇯🇵 JP 8 → tg@nicevpn123
       - 🇯🇵 JP 9 → tg@nicevpn123
-      - 🇰🇷 KR 1 → tg@nicevpn123
       - 🇳🇱 NL 1 → tg@nicevpn123
       - 🇳🇱 NL 2 → tg@nicevpn123
       - 🇳🇱 NL 3 → tg@nicevpn123
@@ -554,6 +557,9 @@ proxy-groups:
       - 🇺🇸 US 80 → tg@nicevpn123
       - 🇺🇸 US 81 → tg@nicevpn123
       - 🇺🇸 US 82 → tg@nicevpn123
+      - 🇺🇸 US 83 → tg@nicevpn123
+      - 🇺🇸 US 84 → tg@nicevpn123
+      - 🇺🇸 US 85 → tg@nicevpn123
       - 🇺🇸 US 9 → tg@nicevpn123
   - name: 💡 自动选择
     type: url-test
@@ -593,6 +599,7 @@ proxy-groups:
       - 🇨🇳 CN 20 → tg@nicevpn123
       - 🇨🇳 CN 21 → tg@nicevpn123
       - 🇨🇳 CN 22 → tg@nicevpn123
+      - 🇨🇳 CN 23 → tg@nicevpn123
       - 🇨🇳 CN 3 → tg@nicevpn123
       - 🇨🇳 CN 4 → tg@nicevpn123
       - 🇨🇳 CN 5 → tg@nicevpn123
@@ -643,7 +650,6 @@ proxy-groups:
       - 🇯🇵 JP 7 → tg@nicevpn123
       - 🇯🇵 JP 8 → tg@nicevpn123
       - 🇯🇵 JP 9 → tg@nicevpn123
-      - 🇰🇷 KR 1 → tg@nicevpn123
       - 🇳🇱 NL 1 → tg@nicevpn123
       - 🇳🇱 NL 2 → tg@nicevpn123
       - 🇳🇱 NL 3 → tg@nicevpn123
@@ -731,6 +737,9 @@ proxy-groups:
       - 🇺🇸 US 80 → tg@nicevpn123
       - 🇺🇸 US 81 → tg@nicevpn123
       - 🇺🇸 US 82 → tg@nicevpn123
+      - 🇺🇸 US 83 → tg@nicevpn123
+      - 🇺🇸 US 84 → tg@nicevpn123
+      - 🇺🇸 US 85 → tg@nicevpn123
       - 🇺🇸 US 9 → tg@nicevpn123
   - name: 🇭🇰 香港节点
     type: url-test
@@ -854,6 +863,9 @@ proxy-groups:
       - 🇺🇸 US 80 → tg@nicevpn123
       - 🇺🇸 US 81 → tg@nicevpn123
       - 🇺🇸 US 82 → tg@nicevpn123
+      - 🇺🇸 US 83 → tg@nicevpn123
+      - 🇺🇸 US 84 → tg@nicevpn123
+      - 🇺🇸 US 85 → tg@nicevpn123
       - 🇺🇸 US 9 → tg@nicevpn123
   - name: 🇹🇼 台湾节点
     type: url-test
@@ -888,7 +900,7 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇰🇷 KR 1 → tg@nicevpn123
+      - DIRECT
   - name: 🌍 其他地区
     type: select
     proxies:
@@ -924,6 +936,7 @@ proxy-groups:
       - 🇨🇳 CN 20 → tg@nicevpn123
       - 🇨🇳 CN 21 → tg@nicevpn123
       - 🇨🇳 CN 22 → tg@nicevpn123
+      - 🇨🇳 CN 23 → tg@nicevpn123
       - 🇨🇳 CN 3 → tg@nicevpn123
       - 🇨🇳 CN 4 → tg@nicevpn123
       - 🇨🇳 CN 5 → tg@nicevpn123
@@ -980,6 +993,7 @@ proxy-groups:
       - 🇨🇳 CN 20 → tg@nicevpn123
       - 🇨🇳 CN 21 → tg@nicevpn123
       - 🇨🇳 CN 22 → tg@nicevpn123
+      - 🇨🇳 CN 23 → tg@nicevpn123
       - 🇨🇳 CN 3 → tg@nicevpn123
       - 🇨🇳 CN 4 → tg@nicevpn123
       - 🇨🇳 CN 5 → tg@nicevpn123
@@ -1030,7 +1044,6 @@ proxy-groups:
       - 🇯🇵 JP 7 → tg@nicevpn123
       - 🇯🇵 JP 8 → tg@nicevpn123
       - 🇯🇵 JP 9 → tg@nicevpn123
-      - 🇰🇷 KR 1 → tg@nicevpn123
       - 🇳🇱 NL 1 → tg@nicevpn123
       - 🇳🇱 NL 2 → tg@nicevpn123
       - 🇳🇱 NL 3 → tg@nicevpn123
@@ -1118,6 +1131,9 @@ proxy-groups:
       - 🇺🇸 US 80 → tg@nicevpn123
       - 🇺🇸 US 81 → tg@nicevpn123
       - 🇺🇸 US 82 → tg@nicevpn123
+      - 🇺🇸 US 83 → tg@nicevpn123
+      - 🇺🇸 US 84 → tg@nicevpn123
+      - 🇺🇸 US 85 → tg@nicevpn123
       - 🇺🇸 US 9 → tg@nicevpn123
   - name: 👉 国内网站
     type: select
