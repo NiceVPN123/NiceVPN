@@ -345,37 +345,7 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 43 VMS"
-  server: join-bede.vmessorg.fun
-  port: 80
-  type: vmess
-  uuid: d9655785-26e9-45bc-8abb-62a24e4bb441
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: join-bede.vmessorg.fun
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 44 VMS"
-  server: join-bede.vmessorg.fun
-  port: 80
-  type: vmess
-  uuid: 94645613-dab4-41f2-bc48-6aa5fcfb9119
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: join-bede.vmessorg.fun
-  udp: true
-- name: "\U0001F1E7\U0001F1F7 BR 45 VMS"
+- name: "\U0001F1E7\U0001F1F7 BR 43 VMS"
   server: 132.226.162.128
   port: 39564
   type: vmess
@@ -385,12 +355,26 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 46 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 44 TJN"
   server: tj2.dalazhi.cyou
   port: 443
   type: trojan
   password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
   skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 45 SSS"
+  server: 167.88.63.79
+  port: 8882
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 46 SSS"
+  server: 167.88.63.79
+  port: 5003
+  type: ss
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 47 SSS"
   server: 167.88.63.79
@@ -467,47 +451,63 @@ proxies:
   ws-opts:
     path: /shirker
   udp: true
-- name: "\U0001F1F3\U0001F1F1 NL 56 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 56 VMS"
+  server: join-bede.vmessorg.fun
+  port: 80
+  type: vmess
+  uuid: d9655785-26e9-45bc-8abb-62a24e4bb441
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: join-bede.vmessorg.fun
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 57 VMS"
+  server: join-bede.vmessorg.fun
+  port: 80
+  type: vmess
+  uuid: 94645613-dab4-41f2-bc48-6aa5fcfb9119
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: join-bede.vmessorg.fun
+  udp: true
+- name: "\U0001F1F3\U0001F1F1 NL 58 SSS"
   server: 172.99.188.99
   port: 5000
   type: ss
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 57 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 59 SSS"
   server: 167.88.63.79
   port: 8881
   type: ss
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 58 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 60 SSS"
   server: 38.143.66.187
   port: 9101
   type: ss
   cipher: aes-256-gcm
   password: e4FCWrgpkji3QY
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 59 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 61 SSS"
   server: 167.88.63.79
   port: 2375
   type: ss
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 60 SSS"
-  server: 167.88.63.79
-  port: 8882
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 61 SSS"
-  server: 167.88.63.79
-  port: 5003
-  type: ss
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 62 VMS"
   type: vmess
@@ -714,7 +714,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 83 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 83 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
   port: 443
@@ -1044,10 +1044,10 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 40 SSS"
   - "\U0001F1EF\U0001F1F5 JP 41 SSS"
   - "\U0001F1F0\U0001F1F7 KR 42 SSS"
-  - "\U0001F1FA\U0001F1F8 US 43 VMS"
-  - "\U0001F1FA\U0001F1F8 US 44 VMS"
-  - "\U0001F1E7\U0001F1F7 BR 45 VMS"
-  - "\U0001F1FA\U0001F1F8 US 46 TJN"
+  - "\U0001F1E7\U0001F1F7 BR 43 VMS"
+  - "\U0001F1FA\U0001F1F8 US 44 TJN"
+  - "\U0001F1FA\U0001F1F8 US 45 SSS"
+  - "\U0001F1FA\U0001F1F8 US 46 SSS"
   - "\U0001F1FA\U0001F1F8 US 47 SSS"
   - "\U0001F1FA\U0001F1F8 US 48 SSS"
   - "\U0001F1FA\U0001F1F8 US 49 SSS"
@@ -1057,9 +1057,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 53 SSS"
   - "\U0001F1FA\U0001F1F3 UN 54 VMS"
   - "\U0001F1FA\U0001F1F8 US 55 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 56 SSS"
-  - "\U0001F1FA\U0001F1F8 US 57 SSS"
-  - "\U0001F1FA\U0001F1F8 US 58 SSS"
+  - "\U0001F1FA\U0001F1F8 US 56 VMS"
+  - "\U0001F1FA\U0001F1F8 US 57 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 58 SSS"
   - "\U0001F1FA\U0001F1F8 US 59 SSS"
   - "\U0001F1FA\U0001F1F8 US 60 SSS"
   - "\U0001F1FA\U0001F1F8 US 61 SSS"
@@ -1084,7 +1084,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 80 VMS"
   - "\U0001F1FA\U0001F1F8 US 81 VMS"
   - "\U0001F1E8\U0001F1F3 CN 82 VMS"
-  - "\U0001F1FA\U0001F1F8 US 83 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 83 VMS"
   - "\U0001F1FA\U0001F1F8 US 84 VMS"
   - "\U0001F1ED\U0001F1F0 HK 85 VMS"
   - "\U0001F1FA\U0001F1F8 US 86 VMS"
@@ -1161,10 +1161,10 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 40 SSS"
   - "\U0001F1EF\U0001F1F5 JP 41 SSS"
   - "\U0001F1F0\U0001F1F7 KR 42 SSS"
-  - "\U0001F1FA\U0001F1F8 US 43 VMS"
-  - "\U0001F1FA\U0001F1F8 US 44 VMS"
-  - "\U0001F1E7\U0001F1F7 BR 45 VMS"
-  - "\U0001F1FA\U0001F1F8 US 46 TJN"
+  - "\U0001F1E7\U0001F1F7 BR 43 VMS"
+  - "\U0001F1FA\U0001F1F8 US 44 TJN"
+  - "\U0001F1FA\U0001F1F8 US 45 SSS"
+  - "\U0001F1FA\U0001F1F8 US 46 SSS"
   - "\U0001F1FA\U0001F1F8 US 47 SSS"
   - "\U0001F1FA\U0001F1F8 US 48 SSS"
   - "\U0001F1FA\U0001F1F8 US 49 SSS"
@@ -1174,9 +1174,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 53 SSS"
   - "\U0001F1FA\U0001F1F3 UN 54 VMS"
   - "\U0001F1FA\U0001F1F8 US 55 VMS"
-  - "\U0001F1F3\U0001F1F1 NL 56 SSS"
-  - "\U0001F1FA\U0001F1F8 US 57 SSS"
-  - "\U0001F1FA\U0001F1F8 US 58 SSS"
+  - "\U0001F1FA\U0001F1F8 US 56 VMS"
+  - "\U0001F1FA\U0001F1F8 US 57 VMS"
+  - "\U0001F1F3\U0001F1F1 NL 58 SSS"
   - "\U0001F1FA\U0001F1F8 US 59 SSS"
   - "\U0001F1FA\U0001F1F8 US 60 SSS"
   - "\U0001F1FA\U0001F1F8 US 61 SSS"
@@ -1201,7 +1201,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 80 VMS"
   - "\U0001F1FA\U0001F1F8 US 81 VMS"
   - "\U0001F1E8\U0001F1F3 CN 82 VMS"
-  - "\U0001F1FA\U0001F1F8 US 83 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 83 VMS"
   - "\U0001F1FA\U0001F1F8 US 84 VMS"
   - "\U0001F1ED\U0001F1F0 HK 85 VMS"
   - "\U0001F1FA\U0001F1F8 US 86 VMS"
