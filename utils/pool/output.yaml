@@ -637,29 +637,28 @@ proxies:
   ws-opts:
     path: /bb
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 66 SSR"
-  server: sg-am3.eqsunshine.com
-  port: 32001
-  type: ssr
-  cipher: aes-256-cfb
-  password: 3g0dHlKME
-  protocol: origin
-  obfs: tls1.2_ticket_auth
-  protocol-param: ''
-  obfs-param: ''
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 67 SSS"
+- name: "\U0001F1F8\U0001F1EC SG 66 SSS"
   server: 18.141.146.6
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 68 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 67 TJN"
   server: tj2.dalazhi.cyou
   port: 443
   type: trojan
   password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 68 VMS"
+  server: 170.178.167.140
+  port: 50002
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 69 VMS"
@@ -766,7 +765,18 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 78 VMS"
+- name: "\U0001F1F8\U0001F1EC SG 78 SSR"
+  server: sg-am3.eqsunshine.com
+  port: 32001
+  type: ssr
+  cipher: aes-256-cfb
+  password: 3g0dHlKME
+  protocol: origin
+  obfs: tls1.2_ticket_auth
+  protocol-param: ''
+  obfs-param: ''
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 79 VMS"
   server: 108.186.116.177
   port: 55005
   type: vmess
@@ -775,19 +785,6 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 79 VMS"
-  server: 38.63.0.83
-  port: 443
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
   udp: true
 - name: "\U0001F1F0\U0001F1F7 KR 80 VMS"
   server: kr-5.vuex.eu.org
@@ -899,18 +896,21 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 89 VMS"
-  server: 142.4.108.24
-  port: 55102
+  server: 38.63.0.83
+  port: 443
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
   cipher: auto
-  tls: false
+  tls: true
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 90 VMS"
-  server: 198.2.204.247
-  port: 46802
+  server: 142.4.108.24
+  port: 55102
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
@@ -1020,8 +1020,8 @@ proxies:
   password: amazonskr05
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 100 VMS"
-  server: 38.54.250.52
-  port: 51431
+  server: 198.2.204.247
+  port: 46802
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
@@ -1030,8 +1030,8 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 101 VMS"
-  server: 23.225.33.173
-  port: 56002
+  server: 38.54.250.52
+  port: 51431
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
@@ -1145,8 +1145,8 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 111 VMS"
-  server: 137.175.41.196
-  port: 50004
+  server: 23.225.33.173
+  port: 56002
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
@@ -1155,8 +1155,8 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 112 VMS"
-  server: 192.74.231.175
-  port: 49202
+  server: 137.175.41.196
+  port: 50004
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
@@ -1267,8 +1267,8 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 122 VMS"
-  server: 198.2.206.37
-  port: 33012
+  server: 192.74.231.175
+  port: 49202
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
@@ -1277,8 +1277,8 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 123 VMS"
-  server: 137.175.9.193
-  port: 57402
+  server: 198.2.206.37
+  port: 33012
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 64
@@ -1365,6 +1365,16 @@ proxies:
       Host: hk4.af49c4e4c2ef.sanfen004.me
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 131 VMS"
+  server: 137.175.9.193
+  port: 57402
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 132 VMS"
   server: 192.74.243.45
   port: 49206
   type: vmess
@@ -1374,21 +1384,11 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 132 TJN"
+- name: "\U0001F1EE\U0001F1F3 IN 133 TJN"
   server: 152.70.74.66
   port: 443
   type: trojan
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 133 VMS"
-  server: 170.178.167.140
-  port: 50002
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: false
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 134 VMS"
@@ -1501,7 +1501,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 145 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 145 VMS"
   type: vmess
   server: arm.gofun.today
   port: 443
@@ -1923,9 +1923,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 63 VMS"
   - "\U0001F1F0\U0001F1F7 KR 64 VMS"
   - "\U0001F1F2\U0001F1FD MX 65 VMS"
-  - "\U0001F1F8\U0001F1EC SG 66 SSR"
-  - "\U0001F1F8\U0001F1EC SG 67 SSS"
-  - "\U0001F1FA\U0001F1F8 US 68 TJN"
+  - "\U0001F1F8\U0001F1EC SG 66 SSS"
+  - "\U0001F1FA\U0001F1F8 US 67 TJN"
+  - "\U0001F1FA\U0001F1F8 US 68 VMS"
   - "\U0001F1FA\U0001F1F8 US 69 VMS"
   - "\U0001F1F8\U0001F1EC SG 70 SSS"
   - "\U0001F1FA\U0001F1F8 US 71 VMS"
@@ -1935,7 +1935,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 75 VMS"
   - "\U0001F1FA\U0001F1F8 US 76 VMS"
   - "\U0001F1FA\U0001F1F8 US 77 VMS"
-  - "\U0001F1FA\U0001F1F8 US 78 VMS"
+  - "\U0001F1F8\U0001F1EC SG 78 SSR"
   - "\U0001F1FA\U0001F1F8 US 79 VMS"
   - "\U0001F1F0\U0001F1F7 KR 80 VMS"
   - "\U0001F1FA\U0001F1F8 US 81 VMS"
@@ -1989,8 +1989,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 129 VMS"
   - "\U0001F1ED\U0001F1F0 HK 130 VMS"
   - "\U0001F1FA\U0001F1F8 US 131 VMS"
-  - "\U0001F1EE\U0001F1F3 IN 132 TJN"
-  - "\U0001F1FA\U0001F1F8 US 133 VMS"
+  - "\U0001F1FA\U0001F1F8 US 132 VMS"
+  - "\U0001F1EE\U0001F1F3 IN 133 TJN"
   - "\U0001F1FA\U0001F1F8 US 134 VMS"
   - "\U0001F1FA\U0001F1F8 US 135 VMS"
   - "\U0001F1FA\U0001F1F8 US 136 VMS"
@@ -2002,7 +2002,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 142 VMS"
   - "\U0001F1FA\U0001F1F8 US 143 VMS"
   - "\U0001F1FA\U0001F1F8 US 144 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 145 VMS"
+  - "\U0001F1FA\U0001F1F8 US 145 VMS"
   - "\U0001F1FA\U0001F1F8 US 146 VMS"
   - "\U0001F1ED\U0001F1F0 HK 147 VMS"
   - "\U0001F1FA\U0001F1F8 US 148 VMS"
@@ -2108,9 +2108,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 63 VMS"
   - "\U0001F1F0\U0001F1F7 KR 64 VMS"
   - "\U0001F1F2\U0001F1FD MX 65 VMS"
-  - "\U0001F1F8\U0001F1EC SG 66 SSR"
-  - "\U0001F1F8\U0001F1EC SG 67 SSS"
-  - "\U0001F1FA\U0001F1F8 US 68 TJN"
+  - "\U0001F1F8\U0001F1EC SG 66 SSS"
+  - "\U0001F1FA\U0001F1F8 US 67 TJN"
+  - "\U0001F1FA\U0001F1F8 US 68 VMS"
   - "\U0001F1FA\U0001F1F8 US 69 VMS"
   - "\U0001F1F8\U0001F1EC SG 70 SSS"
   - "\U0001F1FA\U0001F1F8 US 71 VMS"
@@ -2120,7 +2120,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 75 VMS"
   - "\U0001F1FA\U0001F1F8 US 76 VMS"
   - "\U0001F1FA\U0001F1F8 US 77 VMS"
-  - "\U0001F1FA\U0001F1F8 US 78 VMS"
+  - "\U0001F1F8\U0001F1EC SG 78 SSR"
   - "\U0001F1FA\U0001F1F8 US 79 VMS"
   - "\U0001F1F0\U0001F1F7 KR 80 VMS"
   - "\U0001F1FA\U0001F1F8 US 81 VMS"
@@ -2174,8 +2174,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 129 VMS"
   - "\U0001F1ED\U0001F1F0 HK 130 VMS"
   - "\U0001F1FA\U0001F1F8 US 131 VMS"
-  - "\U0001F1EE\U0001F1F3 IN 132 TJN"
-  - "\U0001F1FA\U0001F1F8 US 133 VMS"
+  - "\U0001F1FA\U0001F1F8 US 132 VMS"
+  - "\U0001F1EE\U0001F1F3 IN 133 TJN"
   - "\U0001F1FA\U0001F1F8 US 134 VMS"
   - "\U0001F1FA\U0001F1F8 US 135 VMS"
   - "\U0001F1FA\U0001F1F8 US 136 VMS"
@@ -2187,7 +2187,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 142 VMS"
   - "\U0001F1FA\U0001F1F8 US 143 VMS"
   - "\U0001F1FA\U0001F1F8 US 144 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 145 VMS"
+  - "\U0001F1FA\U0001F1F8 US 145 VMS"
   - "\U0001F1FA\U0001F1F8 US 146 VMS"
   - "\U0001F1ED\U0001F1F0 HK 147 VMS"
   - "\U0001F1FA\U0001F1F8 US 148 VMS"
