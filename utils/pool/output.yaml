@@ -1310,6 +1310,97 @@ proxies:
     headers:
       Host: vus3.0bad.com
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 139 VMS"
+  type: vmess
+  server: 192.74.232.253
+  port: 52402
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 140 VMS"
+  type: vmess
+  server: 192.74.246.54
+  port: 52992
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 141 VMS"
+  type: vmess
+  server: hd.mamadcucu.com
+  port: 2082
+  cipher: auto
+  uuid: 8e98f959-6eac-40b7-8fa8-e745942c9a8c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: h5.mamadcucu.com
+- name: "\U0001F1F8\U0001F1EC SG 142 TJN"
+  type: trojan
+  server: sg-csjc.syjd.xyz
+  port: 443
+  udp: true
+  password: 51eebef7-beaa-417b-9584-2794d10377c9
+  sni: sg-csjc.syjd.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1ED\U0001F1F0 HK 143 TJN"
+  type: trojan
+  server: 103.20.223.4
+  port: 50180
+  udp: true
+  password: ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1ED\U0001F1F0 HK 144 TJN"
+  type: trojan
+  server: hkhe02.bcloudv.cyou
+  port: 20897
+  udp: true
+  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 145 VMS"
+  type: vmess
+  server: cf-lt.sharecentre.online
+  port: 80
+  cipher: aes-128-gcm
+  uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /shirker
+    headers:
+      host: dp3.scproxy.top
+- name: "\U0001F1ED\U0001F1F0 HK 146 VMS"
+  type: vmess
+  server: n1682824497.edpmvga.cn
+  port: 443
+  cipher: auto
+  uuid: 6d8dca87-bce8-417a-9bc5-120906b5fe42
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+- name: "\U0001F1ED\U0001F1F0 HK 147 TJN"
+  type: trojan
+  server: cn-hk-package.hyperlinkvpn.xyz
+  port: 50180
+  udp: true
+  password: ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -1452,6 +1543,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 136 VMS"
   - "\U0001F1FA\U0001F1F8 US 137 VMS"
   - "\U0001F1FA\U0001F1F8 US 138 VMS"
+  - "\U0001F1FA\U0001F1F8 US 139 VMS"
+  - "\U0001F1FA\U0001F1F8 US 140 VMS"
+  - "\U0001F1FA\U0001F1F8 US 141 VMS"
+  - "\U0001F1F8\U0001F1EC SG 142 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 143 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 144 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 145 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 146 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 147 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1596,5 +1696,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 136 VMS"
   - "\U0001F1FA\U0001F1F8 US 137 VMS"
   - "\U0001F1FA\U0001F1F8 US 138 VMS"
+  - "\U0001F1FA\U0001F1F8 US 139 VMS"
+  - "\U0001F1FA\U0001F1F8 US 140 VMS"
+  - "\U0001F1FA\U0001F1F8 US 141 VMS"
+  - "\U0001F1F8\U0001F1EC SG 142 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 143 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 144 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 145 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 146 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 147 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
