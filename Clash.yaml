@@ -196,6 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: CH 1 → tg@nicevpn123, server: free.node.kk-proxy.pro, port: 54455, type: ss, cipher: chacha20-ietf-poly1305, password: 7b5e7dee-645f-476b-bd25-7748d5f69962, udp: true}
   - {name: MO 1 → tg@nicevpn123, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
   - {name: MO 2 → tg@nicevpn123, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: true, udp: true}
   - {name: MO 3 → tg@nicevpn123, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
@@ -204,9 +205,8 @@ proxies:
   - {name: 🇨🇳 CN 1 → tg@nicevpn123, server: cm1-go.go001.buzz, port: 31101, type: ss, cipher: aes-256-gcm, password: !<str> 123456, udp: true}
   - {name: 🇨🇳 CN 2 → tg@nicevpn123, server: 221.131.165.186, port: 18075, type: vmess, uuid: 1b35440a-1309-339b-9dd3-ff90ff887d76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /soda}, udp: true}
   - {name: 🇨🇳 CN 3 → tg@nicevpn123, server: in06.my1188.org, port: 64096, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 4 → tg@nicevpn123, server: free.node.kk-proxy.pro, port: 54455, type: ss, cipher: chacha20-ietf-poly1305, password: 7b5e7dee-645f-476b-bd25-7748d5f69962, udp: true}
-  - {name: 🇨🇳 CN 5 → tg@nicevpn123, server: in06.my1188.org, port: 64003, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 6 → tg@nicevpn123, server: 120.233.43.62, port: 51904, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 4 → tg@nicevpn123, server: in06.my1188.org, port: 64003, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 5 → tg@nicevpn123, server: 120.233.43.62, port: 51904, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 1 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 10 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 2 → tg@nicevpn123, server: 211.72.35.152, port: 3389, type: trojan, password: 26a663656e575c0b, skip-cert-verify: true, udp: true}
@@ -244,6 +244,7 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - CH 1 → tg@nicevpn123
       - MO 1 → tg@nicevpn123
       - MO 2 → tg@nicevpn123
       - MO 3 → tg@nicevpn123
@@ -254,7 +255,6 @@ proxy-groups:
       - 🇨🇳 CN 3 → tg@nicevpn123
       - 🇨🇳 CN 4 → tg@nicevpn123
       - 🇨🇳 CN 5 → tg@nicevpn123
-      - 🇨🇳 CN 6 → tg@nicevpn123
       - 🇨🇳 TW 1 → tg@nicevpn123
       - 🇨🇳 TW 10 → tg@nicevpn123
       - 🇨🇳 TW 2 → tg@nicevpn123
@@ -281,6 +281,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - CH 1 → tg@nicevpn123
       - MO 1 → tg@nicevpn123
       - MO 2 → tg@nicevpn123
       - MO 3 → tg@nicevpn123
@@ -291,7 +292,6 @@ proxy-groups:
       - 🇨🇳 CN 3 → tg@nicevpn123
       - 🇨🇳 CN 4 → tg@nicevpn123
       - 🇨🇳 CN 5 → tg@nicevpn123
-      - 🇨🇳 CN 6 → tg@nicevpn123
       - 🇨🇳 TW 1 → tg@nicevpn123
       - 🇨🇳 TW 10 → tg@nicevpn123
       - 🇨🇳 TW 2 → tg@nicevpn123
@@ -372,6 +372,7 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - CH 1 → tg@nicevpn123
       - MO 1 → tg@nicevpn123
       - MO 2 → tg@nicevpn123
       - MO 3 → tg@nicevpn123
@@ -382,7 +383,6 @@ proxy-groups:
       - 🇨🇳 CN 3 → tg@nicevpn123
       - 🇨🇳 CN 4 → tg@nicevpn123
       - 🇨🇳 CN 5 → tg@nicevpn123
-      - 🇨🇳 CN 6 → tg@nicevpn123
       - 🇷🇺 RU 1 → tg@nicevpn123
       - 🇷🇺 RU 2 → tg@nicevpn123
   - name: 🪜 故障转移
@@ -391,6 +391,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - CH 1 → tg@nicevpn123
       - MO 1 → tg@nicevpn123
       - MO 2 → tg@nicevpn123
       - MO 3 → tg@nicevpn123
@@ -401,7 +402,6 @@ proxy-groups:
       - 🇨🇳 CN 3 → tg@nicevpn123
       - 🇨🇳 CN 4 → tg@nicevpn123
       - 🇨🇳 CN 5 → tg@nicevpn123
-      - 🇨🇳 CN 6 → tg@nicevpn123
       - 🇨🇳 TW 1 → tg@nicevpn123
       - 🇨🇳 TW 10 → tg@nicevpn123
       - 🇨🇳 TW 2 → tg@nicevpn123
