@@ -280,7 +280,8 @@ proxies:
   - {name: 🇯🇵 JP 2 → tg@nicevpn123, server: 103.75.118.27, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: 🇯🇵 JP 3 → tg@nicevpn123, server: 54.199.83.239, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
   - {name: 🇯🇵 JP 4 → tg@nicevpn123, server: 43.202.49.222, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
-  - {name: 🇯🇵 JP 5 → tg@nicevpn123, server: 43.202.49.88, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 JP 5 → tg@nicevpn123, server: cdn.anycast.eu.org, port: 80, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cdn.anycast.eu.org}}, udp: true}
+  - {name: 🇯🇵 JP 6 → tg@nicevpn123, server: 43.202.49.88, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇰🇷 KR 1 → tg@nicevpn123, server: 13.125.197.207, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇳🇱 NL 1 → tg@nicevpn123, server: 51.15.105.39, port: 443, type: vmess, uuid: 6388bd92-6cbc-4b72-a9a6-931f071d0ffa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nimvws}, udp: true}
   - {name: 🇳🇱 NL 2 → tg@nicevpn123, server: phosphorylative.aurorainiceland.com, port: 443, type: vmess, uuid: 6388bd92-6cbc-4b72-a9a6-931f071d0ffa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nimvws, headers: {Host: phosphorylative.aurorainiceland.com}}, udp: true}
@@ -296,7 +297,6 @@ proxies:
   - {name: 🇸🇬 SG 1 → tg@nicevpn123, server: 8.222.138.164, port: 80, type: vmess, uuid: 7e7f8398-bd39-49d8-9ce6-e48ffef463dd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /2TokGE9A/}, udp: true}
   - {name: 🇸🇬 SG 2 → tg@nicevpn123, server: 54.254.255.246, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇸🇬 SG 3 → tg@nicevpn123, server: 18.142.254.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 SG 4 → tg@nicevpn123, server: cdn.anycast.eu.org, port: 80, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cdn.anycast.eu.org}}, udp: true}
   - {name: 🇺🇸 US 1 → tg@nicevpn123, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 10 → tg@nicevpn123, server: 172.67.78.109, port: 80, type: vmess, uuid: 23ee5ec7-ba2e-4967-bf4f-10ff3b7ba989, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 US 100 → tg@nicevpn123, server: 15.204.209.50, port: 80, type: trojan, password: 7ea37e4f-325b-416f-901a-67012367307f, sni: telewebion.com, skip-cert-verify: true, udp: true}
@@ -551,6 +551,7 @@ proxy-groups:
       - 🇯🇵 JP 3 → tg@nicevpn123
       - 🇯🇵 JP 4 → tg@nicevpn123
       - 🇯🇵 JP 5 → tg@nicevpn123
+      - 🇯🇵 JP 6 → tg@nicevpn123
       - 🇰🇷 KR 1 → tg@nicevpn123
       - 🇳🇱 NL 1 → tg@nicevpn123
       - 🇳🇱 NL 2 → tg@nicevpn123
@@ -566,7 +567,6 @@ proxy-groups:
       - 🇸🇬 SG 1 → tg@nicevpn123
       - 🇸🇬 SG 2 → tg@nicevpn123
       - 🇸🇬 SG 3 → tg@nicevpn123
-      - 🇸🇬 SG 4 → tg@nicevpn123
       - 🇺🇸 US 1 → tg@nicevpn123
       - 🇺🇸 US 10 → tg@nicevpn123
       - 🇺🇸 US 100 → tg@nicevpn123
@@ -810,6 +810,7 @@ proxy-groups:
       - 🇯🇵 JP 3 → tg@nicevpn123
       - 🇯🇵 JP 4 → tg@nicevpn123
       - 🇯🇵 JP 5 → tg@nicevpn123
+      - 🇯🇵 JP 6 → tg@nicevpn123
       - 🇰🇷 KR 1 → tg@nicevpn123
       - 🇳🇱 NL 1 → tg@nicevpn123
       - 🇳🇱 NL 2 → tg@nicevpn123
@@ -825,7 +826,6 @@ proxy-groups:
       - 🇸🇬 SG 1 → tg@nicevpn123
       - 🇸🇬 SG 2 → tg@nicevpn123
       - 🇸🇬 SG 3 → tg@nicevpn123
-      - 🇸🇬 SG 4 → tg@nicevpn123
       - 🇺🇸 US 1 → tg@nicevpn123
       - 🇺🇸 US 10 → tg@nicevpn123
       - 🇺🇸 US 100 → tg@nicevpn123
@@ -996,6 +996,7 @@ proxy-groups:
       - 🇯🇵 JP 3 → tg@nicevpn123
       - 🇯🇵 JP 4 → tg@nicevpn123
       - 🇯🇵 JP 5 → tg@nicevpn123
+      - 🇯🇵 JP 6 → tg@nicevpn123
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -1180,7 +1181,6 @@ proxy-groups:
       - 🇸🇬 SG 1 → tg@nicevpn123
       - 🇸🇬 SG 2 → tg@nicevpn123
       - 🇸🇬 SG 3 → tg@nicevpn123
-      - 🇸🇬 SG 4 → tg@nicevpn123
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -1361,6 +1361,7 @@ proxy-groups:
       - 🇯🇵 JP 3 → tg@nicevpn123
       - 🇯🇵 JP 4 → tg@nicevpn123
       - 🇯🇵 JP 5 → tg@nicevpn123
+      - 🇯🇵 JP 6 → tg@nicevpn123
       - 🇰🇷 KR 1 → tg@nicevpn123
       - 🇳🇱 NL 1 → tg@nicevpn123
       - 🇳🇱 NL 2 → tg@nicevpn123
@@ -1376,7 +1377,6 @@ proxy-groups:
       - 🇸🇬 SG 1 → tg@nicevpn123
       - 🇸🇬 SG 2 → tg@nicevpn123
       - 🇸🇬 SG 3 → tg@nicevpn123
-      - 🇸🇬 SG 4 → tg@nicevpn123
       - 🇺🇸 US 1 → tg@nicevpn123
       - 🇺🇸 US 10 → tg@nicevpn123
       - 🇺🇸 US 100 → tg@nicevpn123
