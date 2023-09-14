@@ -201,12 +201,20 @@ proxies:
   password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 29 SSS"
-  server: 18.181.147.110
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+- name: "\U0001F1FA\U0001F1F8 US 29 VMS"
+  server: ml4.shabijichang.com
+  port: 80
+  type: vmess
+  uuid: 52cce261-ff53-439a-b97d-f36201842cdb
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ml4.shabijichang.com
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 30 VMS"
   server: 45.58.180.126
@@ -228,15 +236,12 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 32 VMS"
-  server: 170.178.189.54
-  port: 33089
-  type: vmess
-  uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
-  alterId: 64
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 32 SSS"
+  server: 18.181.147.110
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 33 VMS"
   server: 45.58.180.126
@@ -249,6 +254,16 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 34 VMS"
+  server: 170.178.189.54
+  port: 33089
+  type: vmess
+  uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 35 VMS"
   server: 198.2.192.152
   port: 443
   type: vmess
@@ -261,7 +276,7 @@ proxies:
   ws-opts:
     path: /path/1694604820478
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 35 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 36 VMS"
   server: 45.199.138.158
   port: 49933
   type: vmess
@@ -271,7 +286,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 36 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 37 VMS"
   server: 198.2.213.154
   port: 443
   type: vmess
@@ -284,7 +299,7 @@ proxies:
   ws-opts:
     path: /path/1694604820478
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 37 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 38 VMS"
   server: sbl3.shabijichang.com
   port: 80
   type: vmess
@@ -299,7 +314,7 @@ proxies:
     headers:
       Host: sbl3.shabijichang.com
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 38 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 39 VMS"
   server: sg.wyhkaa0.cf
   port: 80
   type: vmess
@@ -313,21 +328,6 @@ proxies:
     path: /TG:@hkaa0
     headers:
       Host: sg.wyhkaa0.cf
-  udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 39 VMS"
-  server: ml4.shabijichang.com
-  port: 80
-  type: vmess
-  uuid: 52cce261-ff53-439a-b97d-f36201842cdb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ml4.shabijichang.com
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 40 VMS"
   type: vmess
@@ -480,17 +480,17 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 26 TJN"
   - "\U0001F1F9\U0001F1FC TW 27 TJN"
   - "\U0001F1FA\U0001F1F8 US 28 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 29 SSS"
+  - "\U0001F1FA\U0001F1F8 US 29 VMS"
   - "\U0001F1FA\U0001F1F8 US 30 VMS"
   - "\U0001F1FA\U0001F1F8 US 31 VMS"
-  - "\U0001F1FA\U0001F1F8 US 32 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 32 SSS"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
   - "\U0001F1FA\U0001F1F8 US 34 VMS"
   - "\U0001F1FA\U0001F1F8 US 35 VMS"
   - "\U0001F1FA\U0001F1F8 US 36 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
+  - "\U0001F1FA\U0001F1F8 US 37 VMS"
   - "\U0001F1FA\U0001F1F8 US 38 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 39 VMS"
+  - "\U0001F1FA\U0001F1F8 US 39 VMS"
   - "\U0001F1FA\U0001F1F8 US 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
@@ -535,17 +535,17 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 26 TJN"
   - "\U0001F1F9\U0001F1FC TW 27 TJN"
   - "\U0001F1FA\U0001F1F8 US 28 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 29 SSS"
+  - "\U0001F1FA\U0001F1F8 US 29 VMS"
   - "\U0001F1FA\U0001F1F8 US 30 VMS"
   - "\U0001F1FA\U0001F1F8 US 31 VMS"
-  - "\U0001F1FA\U0001F1F8 US 32 VMS"
+  - "\U0001F1EF\U0001F1F5 JP 32 SSS"
   - "\U0001F1FA\U0001F1F8 US 33 VMS"
   - "\U0001F1FA\U0001F1F8 US 34 VMS"
   - "\U0001F1FA\U0001F1F8 US 35 VMS"
   - "\U0001F1FA\U0001F1F8 US 36 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 37 VMS"
+  - "\U0001F1FA\U0001F1F8 US 37 VMS"
   - "\U0001F1FA\U0001F1F8 US 38 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 39 VMS"
+  - "\U0001F1FA\U0001F1F8 US 39 VMS"
   - "\U0001F1FA\U0001F1F8 US 40 VMS"
   - "\U0001F1FA\U0001F1F8 US 41 VMS"
   - "\U0001F1FA\U0001F1F8 US 42 VMS"
