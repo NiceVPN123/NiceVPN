@@ -196,6 +196,7 @@ dns:
       - +.googleapis.com
       - +.gvt1.com
 proxies:
+  - {name: BD 1 → tg@nicevpn123, server: 103.212.81.87, port: 2083, type: vmess, uuid: fda2abe0-602a-11ee-b439-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /waq0ygpk}, udp: true}
   - {name: MO 1 → tg@nicevpn123, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: true, udp: true}
   - {name: MO 2 → tg@nicevpn123, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: true, udp: true}
   - {name: MO 3 → tg@nicevpn123, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: true, udp: true}
@@ -209,7 +210,14 @@ proxies:
   - {name: 🇨🇳 TW 7 → tg@nicevpn123, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 8 → tg@nicevpn123, server: 211.72.35.157, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 9 → tg@nicevpn123, server: 211.72.35.157, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 RU 1 → tg@nicevpn123, server: 89.185.84.178, port: 46135, type: ss, cipher: chacha20-ietf-poly1305, password: iGZdlsmpNxy4QCGu2CJCKw, udp: true}
   - {name: 🇺🇸 US 1 → tg@nicevpn123, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2 → tg@nicevpn123, server: www.speedtest.net, port: 80, type: vmess, uuid: 62515af2-1dd9-467b-9dd3-774abefb6a62, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.speedtest.net}}, udp: true}
+  - {name: 🇺🇸 US 3 → tg@nicevpn123, server: 216.52.183.243, port: 1001, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, udp: true}
+  - {name: 🇺🇸 US 4 → tg@nicevpn123, server: lt1.992688.xyz, port: 8880, type: vmess, uuid: 2fc248d5-7c81-471d-c2cf-a14e7f5aed2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lt1.992688.xyz}}, udp: true}
+  - {name: 🇺🇸 US 5 → tg@nicevpn123, server: ukld2.gophers.gay, port: 20600, type: ss, cipher: chacha20-ietf-poly1305, password: f5d95005-be14-40fc-bedc-e4a1133a5701, udp: true}
+  - {name: 🇺🇸 US 6 → tg@nicevpn123, server: yd1.992688.xyz, port: 8880, type: vmess, uuid: 2fc248d5-7c81-471d-c2cf-a14e7f5aed2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: yd1.992688.xyz}}, udp: true}
+  - {name: 🇺🇸 US 7 → tg@nicevpn123, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: bffa23aa-ae0a-4c02-af77-2a14c8c0b81c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ns1.v2-vip.fun}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -227,6 +235,7 @@ proxy-groups:
   - name: ✋ 手动选择
     type: select
     proxies:
+      - BD 1 → tg@nicevpn123
       - MO 1 → tg@nicevpn123
       - MO 2 → tg@nicevpn123
       - MO 3 → tg@nicevpn123
@@ -240,13 +249,21 @@ proxy-groups:
       - 🇨🇳 TW 7 → tg@nicevpn123
       - 🇨🇳 TW 8 → tg@nicevpn123
       - 🇨🇳 TW 9 → tg@nicevpn123
+      - 🇷🇺 RU 1 → tg@nicevpn123
       - 🇺🇸 US 1 → tg@nicevpn123
+      - 🇺🇸 US 2 → tg@nicevpn123
+      - 🇺🇸 US 3 → tg@nicevpn123
+      - 🇺🇸 US 4 → tg@nicevpn123
+      - 🇺🇸 US 5 → tg@nicevpn123
+      - 🇺🇸 US 6 → tg@nicevpn123
+      - 🇺🇸 US 7 → tg@nicevpn123
   - name: 💡 自动选择
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - BD 1 → tg@nicevpn123
       - MO 1 → tg@nicevpn123
       - MO 2 → tg@nicevpn123
       - MO 3 → tg@nicevpn123
@@ -260,7 +277,14 @@ proxy-groups:
       - 🇨🇳 TW 7 → tg@nicevpn123
       - 🇨🇳 TW 8 → tg@nicevpn123
       - 🇨🇳 TW 9 → tg@nicevpn123
+      - 🇷🇺 RU 1 → tg@nicevpn123
       - 🇺🇸 US 1 → tg@nicevpn123
+      - 🇺🇸 US 2 → tg@nicevpn123
+      - 🇺🇸 US 3 → tg@nicevpn123
+      - 🇺🇸 US 4 → tg@nicevpn123
+      - 🇺🇸 US 5 → tg@nicevpn123
+      - 🇺🇸 US 6 → tg@nicevpn123
+      - 🇺🇸 US 7 → tg@nicevpn123
   - name: 🇭🇰 香港节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -282,6 +306,12 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 US 1 → tg@nicevpn123
+      - 🇺🇸 US 2 → tg@nicevpn123
+      - 🇺🇸 US 3 → tg@nicevpn123
+      - 🇺🇸 US 4 → tg@nicevpn123
+      - 🇺🇸 US 5 → tg@nicevpn123
+      - 🇺🇸 US 6 → tg@nicevpn123
+      - 🇺🇸 US 7 → tg@nicevpn123
   - name: 🇹🇼 台湾节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -315,15 +345,18 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
+      - BD 1 → tg@nicevpn123
       - MO 1 → tg@nicevpn123
       - MO 2 → tg@nicevpn123
       - MO 3 → tg@nicevpn123
+      - 🇷🇺 RU 1 → tg@nicevpn123
   - name: 🪜 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - BD 1 → tg@nicevpn123
       - MO 1 → tg@nicevpn123
       - MO 2 → tg@nicevpn123
       - MO 3 → tg@nicevpn123
@@ -337,7 +370,14 @@ proxy-groups:
       - 🇨🇳 TW 7 → tg@nicevpn123
       - 🇨🇳 TW 8 → tg@nicevpn123
       - 🇨🇳 TW 9 → tg@nicevpn123
+      - 🇷🇺 RU 1 → tg@nicevpn123
       - 🇺🇸 US 1 → tg@nicevpn123
+      - 🇺🇸 US 2 → tg@nicevpn123
+      - 🇺🇸 US 3 → tg@nicevpn123
+      - 🇺🇸 US 4 → tg@nicevpn123
+      - 🇺🇸 US 5 → tg@nicevpn123
+      - 🇺🇸 US 6 → tg@nicevpn123
+      - 🇺🇸 US 7 → tg@nicevpn123
   - name: 👉 国内网站
     type: select
     proxies:
