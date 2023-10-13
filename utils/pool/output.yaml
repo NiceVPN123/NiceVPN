@@ -201,6 +201,108 @@ proxies:
   password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  type: vmess
+  server: 104.18.203.232
+  port: 443
+  cipher: auto
+  uuid: 8d48dab3-cb73-4a92-b575-e9fb0003dfc8
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@hopev2ray,@hopev2ray
+    headers:
+      host: fr2vm.cdn-03.live
+- name: "\U0001F1FA\U0001F1F8 US 30 VMS"
+  type: vmess
+  server: 45.199.138.191
+  port: 30000
+  cipher: auto
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /path/1696251522438
+    headers:
+      host: www.42077230.xyz
+- name: "\U0001F1FA\U0001F1F8 US 31 VMS"
+  type: vmess
+  server: 104.31.16.61
+  port: 443
+  cipher: auto
+  uuid: 0349ae50-68fc-11ee-b037-205c6d5f5d78
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /@hopev2ray
+    headers:
+      host: eu-2.0rd.net
+- name: "\U0001F1EB\U0001F1F7 FR 32 TJN"
+  type: trojan
+  server: 13.39.200.15
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 33 VMS"
+  type: vmess
+  server: 192.203.230.245
+  port: 2052
+  cipher: auto
+  uuid: 069e3e8b-36ec-4bef-a4da-c423665b56cc
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /public
+    headers:
+      host: de5.biqibao.site
+- name: "\U0001F1FA\U0001F1F8 US 34 VMS"
+  type: vmess
+  server: 104.24.208.25
+  port: 2053
+  cipher: auto
+  uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958
+  alterId: 0
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: b5.iraniancp.click
+- name: "\U0001F1FA\U0001F1F8 US 35 VMS"
+  type: vmess
+  server: 45.199.138.222
+  port: 30000
+  cipher: auto
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+  alterId: 64
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /path/1696251693048
+    headers:
+      host: www.19229362.xyz
+- name: "\U0001F1E9\U0001F1EA DE 36 TJN"
+  type: trojan
+  server: 5.104.107.143
+  port: 443
+  udp: true
+  password: 35f59fa7-10ed-40da-a91c-ed5ab9ea13b9
+  sni: de1.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -233,6 +335,14 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 26 TJN"
   - "\U0001F1F9\U0001F1FC TW 27 TJN"
   - "\U0001F1FA\U0001F1F8 US 28 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 31 VMS"
+  - "\U0001F1EB\U0001F1F7 FR 32 TJN"
+  - "\U0001F1FA\U0001F1F8 US 33 VMS"
+  - "\U0001F1FA\U0001F1F8 US 34 VMS"
+  - "\U0001F1FA\U0001F1F8 US 35 VMS"
+  - "\U0001F1E9\U0001F1EA DE 36 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -267,5 +377,13 @@ proxy-groups:
   - "\U0001F1F9\U0001F1FC TW 26 TJN"
   - "\U0001F1F9\U0001F1FC TW 27 TJN"
   - "\U0001F1FA\U0001F1F8 US 28 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 29 VMS"
+  - "\U0001F1FA\U0001F1F8 US 30 VMS"
+  - "\U0001F1FA\U0001F1F8 US 31 VMS"
+  - "\U0001F1EB\U0001F1F7 FR 32 TJN"
+  - "\U0001F1FA\U0001F1F8 US 33 VMS"
+  - "\U0001F1FA\U0001F1F8 US 34 VMS"
+  - "\U0001F1FA\U0001F1F8 US 35 VMS"
+  - "\U0001F1E9\U0001F1EA DE 36 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
