@@ -939,51 +939,21 @@ proxies:
   password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 100 VMS"
-  server: ns1.v2-vip.fun
-  port: 80
-  type: vmess
-  uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /api/v3/download.getFile
-    headers:
-      Host: ns1.v2-vip.fun
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 101 VMS"
-  server: us-02.jikuai.xyz
-  port: 2082
-  type: vmess
-  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us-02.jikuai.xyz
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 102 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 100 SSS"
   server: 34.209.235.189
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 103 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 101 SSS"
   server: us.fanqiecloud.top
   port: 22752
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 75172987-c67e-4903-80a9-bbd8128a57e5
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 104 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 102 VMS"
   server: us-fsl.jikuai.xyz
   port: 8443
   type: vmess
@@ -998,7 +968,7 @@ proxies:
     headers:
       Host: us-fsl.jikuai.xyz
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 105 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 103 VMS"
   server: v15.583182.xyz
   port: 2053
   type: vmess
@@ -1013,14 +983,14 @@ proxies:
     headers:
       Host: v15.583182.xyz
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 106 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 104 SSS"
   server: 35.93.149.201
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 107 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 105 VMS"
   server: 158.101.7.8
   port: 80
   type: vmess
@@ -1032,6 +1002,36 @@ proxies:
   network: ws
   ws-opts:
     path: /
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 106 VMS"
+  server: ns1.v2-vip.fun
+  port: 80
+  type: vmess
+  uuid: 2a683a54-f098-4d98-92fc-762b85d907b9
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v3/download.getFile
+    headers:
+      Host: ns1.v2-vip.fun
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 107 VMS"
+  server: us-02.jikuai.xyz
+  port: 2082
+  type: vmess
+  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us-02.jikuai.xyz
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 108 VMS"
   type: vmess
@@ -1071,7 +1071,7 @@ proxies:
   port: 9094
   password: rpgbNnU9rDDU4aWZ
   cipher: aes-256-cfb
-- name: "\U0001F1FA\U0001F1F8 US 113 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 113 VMS"
   type: vmess
   server: us-fsl.jikuai.xyz
   port: 8443
@@ -1551,20 +1551,20 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 97 SSS"
   - "\U0001F1E9\U0001F1EA DE 98 VMS"
   - "\U0001F1FA\U0001F1F8 US 99 TJN"
-  - "\U0001F1FA\U0001F1F8 US 100 VMS"
-  - "\U0001F1FA\U0001F1F8 US 101 VMS"
-  - "\U0001F1FA\U0001F1F8 US 102 SSS"
-  - "\U0001F1FA\U0001F1F8 US 103 SSS"
-  - "\U0001F1FA\U0001F1F8 US 104 VMS"
+  - "\U0001F1FA\U0001F1F8 US 100 SSS"
+  - "\U0001F1FA\U0001F1F8 US 101 SSS"
+  - "\U0001F1FA\U0001F1F8 US 102 VMS"
+  - "\U0001F1FA\U0001F1F8 US 103 VMS"
+  - "\U0001F1FA\U0001F1F8 US 104 SSS"
   - "\U0001F1FA\U0001F1F8 US 105 VMS"
-  - "\U0001F1FA\U0001F1F8 US 106 SSS"
-  - "\U0001F1FA\U0001F1F8 US 107 VMS"
+  - "\U0001F1FA\U0001F1F8 US 106 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 107 VMS"
   - "\U0001F1FA\U0001F1F8 US 108 VMS"
   - "\U0001F1EB\U0001F1F7 FR 109 SSS"
   - "\U0001F1EB\U0001F1F7 FR 110 SSS"
   - "\U0001F1EB\U0001F1F7 FR 111 SSS"
   - "\U0001F1E9\U0001F1EA DE 112 SSS"
-  - "\U0001F1FA\U0001F1F8 US 113 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 113 VMS"
   - "\U0001F1FA\U0001F1F8 US 114 VMS"
   - "\U0001F1EB\U0001F1F7 FR 115 SSS"
   - "\U0001F1EB\U0001F1F7 FR 116 SSS"
@@ -1717,20 +1717,20 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 97 SSS"
   - "\U0001F1E9\U0001F1EA DE 98 VMS"
   - "\U0001F1FA\U0001F1F8 US 99 TJN"
-  - "\U0001F1FA\U0001F1F8 US 100 VMS"
-  - "\U0001F1FA\U0001F1F8 US 101 VMS"
-  - "\U0001F1FA\U0001F1F8 US 102 SSS"
-  - "\U0001F1FA\U0001F1F8 US 103 SSS"
-  - "\U0001F1FA\U0001F1F8 US 104 VMS"
+  - "\U0001F1FA\U0001F1F8 US 100 SSS"
+  - "\U0001F1FA\U0001F1F8 US 101 SSS"
+  - "\U0001F1FA\U0001F1F8 US 102 VMS"
+  - "\U0001F1FA\U0001F1F8 US 103 VMS"
+  - "\U0001F1FA\U0001F1F8 US 104 SSS"
   - "\U0001F1FA\U0001F1F8 US 105 VMS"
-  - "\U0001F1FA\U0001F1F8 US 106 SSS"
-  - "\U0001F1FA\U0001F1F8 US 107 VMS"
+  - "\U0001F1FA\U0001F1F8 US 106 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 107 VMS"
   - "\U0001F1FA\U0001F1F8 US 108 VMS"
   - "\U0001F1EB\U0001F1F7 FR 109 SSS"
   - "\U0001F1EB\U0001F1F7 FR 110 SSS"
   - "\U0001F1EB\U0001F1F7 FR 111 SSS"
   - "\U0001F1E9\U0001F1EA DE 112 SSS"
-  - "\U0001F1FA\U0001F1F8 US 113 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 113 VMS"
   - "\U0001F1FA\U0001F1F8 US 114 VMS"
   - "\U0001F1EB\U0001F1F7 FR 115 SSS"
   - "\U0001F1EB\U0001F1F7 FR 116 SSS"
