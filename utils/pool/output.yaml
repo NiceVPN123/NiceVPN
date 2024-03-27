@@ -2220,6 +2220,55 @@ proxies:
   sni: mpvideo.qpic.cn
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1E6 CA 265 SSS"
+  type: ss
+  server: 198.57.27.218
+  port: 5004
+  password: g5MeD6Ft3CWlJId
+  cipher: aes-256-gcm
+- name: "\U0001F1FA\U0001F1F8 US 266 VMS"
+  type: vmess
+  server: 154.23.190.162
+  port: 443
+  cipher: auto
+  uuid: b9984674-f771-4e67-a198-c7e60720ba2c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+- name: "\U0001F1FA\U0001F1F8 US 267 VMS"
+  type: vmess
+  server: 154.23.190.162
+  port: 443
+  cipher: auto
+  uuid: b9984674-f771-4e67-a198-c7e60720ba2c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: ws
+- name: "\U0001F1E8\U0001F1E6 CA 268 TJN"
+  type: trojan
+  server: ca-trojan.bonds.id
+  port: 443
+  udp: true
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 269 HTT"
+  type: http
+  server: 124.15.12.24
+  port: 251
+  username: username
+  password: password
+- name: "\U0001F1E8\U0001F1F3 CN 270 SK5"
+  type: socks5
+  server: 124.15.12.24
+  port: 2312
+- name: "\U0001F1E6\U0001F1FA AU 271 SK5"
+  type: socks5
+  server: 1.2.3.4
+  port: 123
+  username: username
+  password: password
 proxy-groups:
 - name: automatic
   type: url-test
@@ -2488,6 +2537,13 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 262 TJN"
   - "\U0001F1E8\U0001F1F3 CN 263 TJN"
   - "\U0001F1E8\U0001F1F3 CN 264 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 265 SSS"
+  - "\U0001F1FA\U0001F1F8 US 266 VMS"
+  - "\U0001F1FA\U0001F1F8 US 267 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 268 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 269 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 270 SK5"
+  - "\U0001F1E6\U0001F1FA AU 271 SK5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -2758,5 +2814,12 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 262 TJN"
   - "\U0001F1E8\U0001F1F3 CN 263 TJN"
   - "\U0001F1E8\U0001F1F3 CN 264 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 265 SSS"
+  - "\U0001F1FA\U0001F1F8 US 266 VMS"
+  - "\U0001F1FA\U0001F1F8 US 267 VMS"
+  - "\U0001F1E8\U0001F1E6 CA 268 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 269 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 270 SK5"
+  - "\U0001F1E6\U0001F1FA AU 271 SK5"
 rules:
 - "MATCH,\U0001F310 Proxy"
